@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.cart-cont{
+	width: 100%;
+	height: 100vh;
+/*	background: pink;*/
+	padding: 50px;
+	padding-top: 10px;
+}
+.cart-Item{
+	margin: 0px auto;
+}
+
+
+
+
+/*checkoox*/
+.checks input{
+  width: 25px;
+  height: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*checkbox*/
+
+
+
+
+table{
+	width: 100%;
+/*	border-collapse: collapse;*/
+	border: 2px solid #fff;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 20px;
+}
+.cart-image{
+	display: flex;
+	flex-wrap: wrap;
+}
+td img{
+	width: 80px;
+	margin-right: 15px;
+}
+th{
+	text-align: left;
+	padding: 10px;
+	padding-right: 15px;
+	color: #fff;
+	background: #ff523b;
+	cursor: pointer;
+
+}
+td{
+	padding: 10px 15px 0px 0px;
+
+}
+td input{
+	width: 50px;
+	height: 30px;
+	padding: 5px;
+	outline-color: #ff523b;
+/*	border-radius: 10px;*/
+	border: 1px solid #000;
+	padding: 5px;
+}
+td label{
+	color: #ff523b;
+	font-size: 12px;
+}
+td label:hover{
+	text-decoration: underline;
+}
+tr{
+	transition:all 0.6s ease;
+}
+.info{
+	text-align: left;
+}
+#price{
+	color: #ff523b;
+	font-weight: bolder;
+}
+
+/*total price*/
+.total-price{
+	display: flex;
+	justify-content: flex-end;
+
+}
+.total-price table{
+	border-top: 2px solid #ff523b;
+	width: 100%;
+	max-width: 465px;
+	text-align: left;
+}
+td:last-child{
+	text-align: right;
+}
+th:last-child{
+	text-align: right;
+}
+button{
+	width: 100%;
+	border: none;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+
+}
+
+
+@media only screen and (max-width:600px){
+.cart-cont{
+	
+	padding: 20px;
+	padding-top: 10px;
+}
+}
+@media only screen and (max-width:440px){
+.action{
+	display: none;
+}
+
+.remove-check{
+	display: none;
+}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>User-Login/Signup</title>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="login-cont">
+		
+			<form action="main.html">
+				<div class="login">
+					<div class="logo"><span>SHOP</span>AHOLIC <span>PH</span></div>
+					<div class="header">
+						<div class="header1">
+							<span onclick="login()" class="active" id="color1">Login</span>
+							<span onclick="register()" class="color2" id=" color2">Register</span>
+						</div>
+
+						<div class="lines">
+							<hr id="line">
+						</div>
+					</div>
+
+					
+					<div class="input" id="login">
+						<input type="email" name="user" placeholder="Email" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<button type="submit" class="btn">Login</button>
+						<a href="">Forgot Password?</a>
+					</div>
+				</div>
+			</form>
+
+			<form action="main.html">
+				<div class="register">
+		
+			
+					<div class="input2" id="register">
+						<input type="email" name="user" placeholder="Email" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<input type="password" name="password" placeholder="Confirm Password" required>
+						<button type="submit" class="btn">Login</button>
+						<a href="" id="login">Already have an account?</a>
+					</div>
+				</div>
+			</form>
+
+	</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+var LoginForm = document.getElementById("login");
+var RegForm = document.getElementById("register");
+var color1 = document.getElementById("color1");
+var color2 = document.getElementById("color2");
+var line = document.getElementById("line");
+
+function register(){
+	RegForm.style.transform = "translateX(-350px)";
+	LoginForm.style.transform = "translateX(-350px)";
+
+	line.style.transform = "translateX(140px)";
+
+
+	
+	}
+function login(){
+	RegForm.style.transform = "translateX(0px)";
+	LoginForm.style.transform = "translateX(0px)";
+
+	line.style.transform = "translateX(0px)";
+
+	
+}
+
+
+</script>
+
+</html>

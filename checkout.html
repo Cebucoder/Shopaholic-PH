@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Checkout</title>
+</head>
+<body>
+
+<div class="mother-cont">
+
+	<!-- navigation-->
+	<nav class="navigation" id="printnone">
+
+		<!-- logo -->
+		<div class="logo">
+			<h1><a href="main.html"><span style="color: #EE4D2D;">Shop</span>aholic<span style="color: #EE4D2D;">ph</span></a></h1>
+		</div>
+
+		<!-- navlinks icon -->
+		<div class="icon-cont">
+			<a href="user-login.html"><i class="fa-regular fa-user"></i></a>
+			<a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+			<a href="#"><i class="fa-regular fa-heart" id="heart"></i></a>
+			<a href="contact-support.html"><i class="fa-solid fa-headset"></i></a>
+		</div>
+
+	</nav>
+
+	<!-- productnavlinks -->
+			<div class="product-cont">
+				
+				<!-- <i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i> -->
+
+				<div class="navlinks">
+					<i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i>
+					<ul>
+						<li><a href="main.html#newin">NEW IN</a></li>
+						<li><a href="main.html#dress">TRENDS</a></li>
+						<li><a href="main.html">SALE</a></li>
+						<li><a href="main.html">CLOTHING</a></li>
+						<li><a href="main.html">FURNITURES</a></li>
+						<li><a href="main.html#dress">DRESSES</a></li>
+						<li><a href="main.html">TOPS</a></li>
+						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
+						<li><a href="main.html">BEACHWEAR</a></li>
+					</ul>
+
+					<div class="search">
+						<input type="text" name="" maxlength="30">
+						<i class="fa-solid fa-search"></i>
+					</div>
+				</div>
+
+				<div class="navlink-mobile" id="navlink-mobile-open">
+					
+					<ul>
+						<li><a href="main.html#newin">NEW IN</a></li>
+						<li><a href="main.html#dress">TRENDS</a></li>
+						<li><a href="main.html">SALE</a></li>
+						<li><a href="main.html">CLOTHING</a></li>
+						<li><a href="main.html">FURNITURES</a></li>
+						<li><a href="main.html#dress">DRESSES</a></li>
+						<li><a href="main.html">TOPS</a></li>
+						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
+						<li><a href="main.html">BEACHWEAR</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+	<div class="checkout-cont">
+		
+		<div class="checkout-cont-form">
+
+
+			<div class="payment-form">
+
+				<!-- costumer info -->
+			<div class="costumer-info">
+				
+				<h3>Customer's Info</h3>
+
+				<div class="cost-info">
+
+					<span class="name">
+						<span>Name:</span>
+						<span>Juan Dela Cruz</span>
+					</span>
+ 
+					<span class="address">
+						<span>Address:</span>
+						<span>143 Maria Cacao, Seal Subdivision <br> 6000 Cebu City</span>
+					</span>
+
+					<span class="contact">
+						<span>Contact:</span>
+						<span>+1234567890</span>
+					</span>
+
+					<span class="email">
+						<span>Email:</span>
+						<span>Juandelacruz123@gmail.com</span>
+					</span>
+
+					<span class="notes">
+						<span>Notes</span>
+						<small id="alert">Text to long</small>
+						<span><textarea type="text" placeholder="Write something for delivery.." maxlength="200" id="text" ></textarea></span>
+					</span>
+
+					<span class="add-address">
+						<button onclick="openModal()">Change Address</button>
+					</span>
+
+
+					<!-- pupmodal for changing address -->
+
+					<div class="address-modal" id="Modal-Popup">
+						
+						
+							<div class="address-from">
+								<h3>New Address</h3>
+								<input type="text" name="" placeholder="House no:" required>
+								<input type="text" name="" placeholder="Street Address" required>
+								<input type="text" name="" placeholder="Province" required>
+								<input type="text" name="" placeholder="City" required>
+
+								<div class="btn-form" id="Close-Popup">
+									<span class="save" onclick="saveModal()">Save</span>
+									<span class="cancel" onclick="closeModal()">Cancel</span>
+								</div>
+							</div>
+					
+
+					</div>
+
+					<!-- popup modal addresss end -->
+
+
+				</div>
+
+			</div>	
+				
+				<h4 class="mb-3">Payment Method</h4>
+				<small>All transaction are secure and encrypted.</small>
+				<span>
+					<img src="https://f.hubspotusercontent00.net/hubfs/7482958/SECURE-DATA-2-1.png" style="width:30px">
+				</span>
+                <div class="d-block my-3">
+
+                	<!-- credit card -->
+                    <div class="custom-control custom-radio" id="credit1" onclick="credit1()">
+                       <div class="header-cont">
+                       		 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        	<label class="custom-control-label" for="credit" onclick="credit1()"><img src="./add-logo/credit.png" style="width:90px"></label>
+                       </div>
+
+                       <!-- form -->
+                        <div class="credit-form" id="credit-form">
+                        	
+                        	<div class="top-cont">
+                        		<small>We accepts all major credit card.</small>
+
+                        	<div class="pay-logo">
+								<span><img src="https://cf.shopee.ph/file/648aa3f65236a21cfb97a35e1644e399"></span>
+								<span><img src="https://cf.shopee.ph/file/8efc3b564e08e9e864ea83ab43d9f913"></span>
+								<span><img src="https://cf.shopee.ph/file/91720ed84858d490ca62142de0494559"></span>
+								<span style="box-shadow: 0 0 10px 2px #fff; background:#fff;width: auto;"><small class="small">And more..</small></span>
+							</div>
+
+							<div class="card-input">
+								<div class="input-box">
+									<input type="number" name="" placeholder="Card number" required >
+								</div>
+								<div class="input-box">
+									<input type="text" name="" placeholder="Card name" required>
+								</div>
+
+								<div class="input-pass">
+									<input type="number" name="" placeholder="Exp (MM / YY)" required>
+									<input type="number" max="3" name="" placeholder="CCV" required>
+								</div>
+							</div>
+
+                        	</div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- debit card -->
+                    <div class="custom-control custom-radio" id="debit1" onclick="debit1()">
+                       <div class="header-cont">
+                       		 <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="debit" onclick="debit1()"><img src="./add-logo/cod.png" style="width:90px"></label>
+                       </div>
+
+                    </div>
+
+                    <!-- paypal -->
+                    <div class="custom-control custom-radio" id="paypal1" onclick="paypal1()">
+                        <div class="header-cont">
+                        	<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="paypal" onclick="paypal1()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" style="width: 90px;"></label>
+                        </div>
+
+                         <!--Payapal form -->
+                        <div class="paypal-form" id="paypal-form">
+                        	
+                        	<div class="paypal-cont">
+                        		<span class="paypal-logo">
+                        			<img src="https://dwglogo.com/wp-content/uploads/2016/08/PayPal_Logo_Icon.png">
+                        		</span>
+
+							<div class="paypal-input">
+								<div class="input-box">
+									<input type="email" name="" placeholder="Input email address / mobile number" required>
+								</div>
+
+								<div class="forgot">
+									<a href="">Forgot email?</a>
+								</div>
+
+								<div class="paypal-button">
+									<button>Next</button>
+								</div>
+							</div>
+
+                        	</div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- gacsh -->
+                    <div class="custom-control custom-radio" id="gcash1" onclick="gcash1()">
+                        <div class="header-cont">
+                        	<input id="gcash" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="gcash" onclick="gcash1()"><img src="https://business.inquirer.net/wp-content/blogs.dir/5/files/2022/03/GCash-Logo.png" style="width: 100px;"></label>
+                        </div>
+
+                            <!-- form -->
+                        <div class="gcash-form" id="gcash-form">
+                        	
+                        	<div class="gcash-cont">
+                        		<span class="gcash-logo">
+                        			<img src="https://business.inquirer.net/wp-content/blogs.dir/5/files/2022/03/GCash-Logo.png" style="width: 100px;">
+                        		</span>
+
+							<div class="gcash-input">
+
+								<div class="head">
+									<h3>Login to link with GCash</h3>
+									<small>Enter your mobile number.</small>
+								</div>
+
+								<div class="gcash-box">
+									<span>+63</span><input type="number" name="" placeholder="" required>
+								</div>
+
+							
+								<div class="gcash-button">
+									<button>Next</button>
+								</div>
+							</div>
+
+                        	</div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="privacy">
+                	<div class="chek" style="display: flex; align-items: center;">
+                		<input type="checkbox" name=""  style="width: 20px; height: 20px; margin-right: 10px;">
+                		<span><small>Save information for a faster transaction</small></span>
+                	</div>
+
+                	<div class="priv" style="margin-top: 30px;">
+                		<small>By submitting your order, you agree to our 
+	                		<span><a href="" style="color:#000">Terms of Service,</a></span>
+	                		<span><a href="" style="color:#000">Privacy Policy,</a></span>and
+	                		<span><a href="" style="color:#000">Returns Policy</a></span>
+                		</small>
+                	</div>
+                </div>
+
+                <div class="checkout-btn">
+                	<button onclick="openRec()">Place Order</button>
+                </div>
+
+                <div class="reciept" id="reciept-popup" id="close">
+
+
+                	<div class="top-reciept"></div>
+                	<div class="reciept-form">
+
+
+                		<div class="grove">
+
+                			<div class="close-check" onclick="closeCheck()">
+                				<i class="fa-solid fa-xmark"></i>
+                			</div>
+
+                			<div class="logo-check">
+                				<img src="./add-logo/5.png">
+                			</div>
+
+                			<div class="track-id">
+                				<small>Order Id: 097282G6J</small>
+                			</div>
+                		</div>
+
+                		<div class="check-order">
+                			<h4>Yay! Your Order is Confirmed</h4>
+                			<small>Hi Juan</small>
+                			
+                			<p>Thank you for your order! We will send you a confirmation to your email or mobile number that you've been provided, when your order is approved.</p>
+                			
+                		</div>
+
+                		<div class="confirm-order" id="printform">
+                			<table>
+                				<tr>
+                					<th>Order Details</th>
+                					<th>Quantity</th>
+                					<th>Price</th>
+                				</tr>
+
+                				<tr>
+                					<td>
+                						<div class="pro-det">
+                							<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+                							<span class="det">
+                								<small>Puff Sleeve Floral Top</small>
+                								<span>₱283</span>
+                							</span>
+                						</div>
+                					</td>
+                					<td>1</td>
+                					<td>120</td>
+                				</tr>
+
+                				<tr>
+                					<td>
+                						<div class="pro-det">
+                							<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp">
+                							<span class="det">
+                								<small>Zebbra Sleeve Top</small>
+                								<span>₱199</span>
+                							</span>
+                						</div>
+                					</td>
+                					<td>1</td>
+                					<td>199</td>
+                				</tr>
+                			</table>
+
+                			<div class="check-total">
+                				<div class="label">
+                					<span>Total:</span>
+                					<span>Shipping Fee:</span>
+                					<span>Grand Total:</span>
+                				</div>
+
+                				<div class="total-check">
+                					<span>319</span>
+                					<span>100</span>
+                					<span>419</span>
+                				</div>
+                			</div>
+
+                			<div class="ship-cont">
+                				<div class="ship-det">
+                					<span>
+                						<h4>Shipping Address</h4>
+                						<small>143 Maria Cacao, Seal Subdivision <br> 6000 Cebu City</small>
+                					</span>
+
+                					<span>
+                						<h4>Billing Address</h4>
+                						<small>143 Maria Cacao, Seal Subdivision <br> 6000 Cebu City</small>
+                					</span>
+                				</div>
+                			</div>
+                		</div>
+
+                		<div class="reciept-footer">
+                			<span>Something went wrong?</span>
+                			<span><a href="">Report Here</a></span>
+
+                			<div class="print">
+                				<i class="fa-solid fa-print"></i>
+                			</div>
+
+                			<!-- <div class="close">
+                				<i class="fa-solid fa-close"></i>
+                			</div> -->
+                		</div>
+
+                	</div>
+                </div>
+
+
+
+			</div>
+			
+			<div class="prev-chart">
+				<div class="prev-content">
+					<h3>Ordered Item's</h3>
+
+					<div class="prev-table">
+						<div class="label">
+							<label>Products</label>
+
+							<div class="prev-items">
+								<div class="img-img">
+									<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+								</div>
+
+								<div class="prev-det">
+									<h6 style="padding-bottom: 10px;">Puff Sleeve Floral Top</h6>
+									<small>Price: ₱283</small>
+								</div>
+
+							</div>
+
+							<div class="prev-items">
+								<div class="img-img">
+									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp">
+								</div>
+
+								<div class="prev-det">
+									<h6 class="name" style="padding-bottom: 10px;" >Zebbra Sleeve Top</h6>
+									<small>Price: ₱199</small>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="label">
+							<label>Quantity</label>
+
+							<div class="prev-items">
+								<small>1</small>
+							</div>
+
+							<div class="prev-items">
+								<small>1</small>
+							</div>
+						</div>
+
+						<div class="label">
+							<label>Price</label>
+
+							<div class="prev-items">
+								<small>283</small>
+							</div>
+
+							<div class="prev-items">
+								<small>199</small>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="prev-total">
+						<div class="total-cont">
+							<label>Total:</label>
+							<label>Shipping Fee:</label>
+							<label>Grand Total:</label>
+						</div>
+
+						<div class="total-price-cont">
+							<label>319</label>
+							<label>100</label>
+							<label>419</label>
+						</div>
+					</div>
+
+
+					
+			</div>
+
+		</div>
+		
+	</div>
+</div>		
+
+	<!-- footer -->
+	<footer class="footer">
+
+		<div class="foot-cont">
+			<label>Costumer Service</label>
+
+			<a href="">Help Centre</a>
+			<a href="">ShopaholicPH Cares PH</a>
+			<a href="">Payment Methods</a>
+			<a href="">ShopaholicPay</a>
+			<a href="">ShopaholicPH Coins</a>
+			<a href="">Order Tracking</a>
+			<a href="">Free Shipping</a>
+			<a href="">Return & Refund</a>
+			<a href="">ShopaholicPH Guarantee</a>
+			<a href="">Overseas Product</a>
+			<a href="">Contact Us</a>
+
+		</div>
+
+		<div class="foot-cont">
+			<label>ABOUT SHOPEE</label>
+
+			<a href="">About Us</a>
+			<a href="">ShopaholicPH Blog</a>
+			<a href="">ShopaholicPH Careers</a>
+			<a href="">ShopaholicPH Policies</a>
+			<a href="">Privacy Policy</a>
+			<a href="">ShopaholicPH Mall</a>
+			<a href="">Seller Centre</a>
+			<a href="">Flash Deals</a>
+			<a href="">Media Contact</a>
+			
+		</div>
+
+		<div class="foot-cont">
+			
+			<label>PAYENT</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/f4fc50d716f0377a3bdc6ad1906f3be4"></span>
+				<span><img src="https://cf.shopee.ph/file/648aa3f65236a21cfb97a35e1644e399"></span>
+				<span><img src="https://cf.shopee.ph/file/8efc3b564e08e9e864ea83ab43d9f913"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/91720ed84858d490ca62142de0494559"></span>
+				<span><img src="https://cf.shopee.ph/file/4a1f1c2d9ee1820ccc9621b44f277387"></span>
+				<span><img src="https://www.psaserbilis.com.ph/Content/img/gcash-logo.png" width="100%" style="padding:10px"></span>
+			</div>
+
+			<label>LOGISTICS</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/631b5315df5e2e7a6360553c48c7b394"></span>
+				<span><img src="https://cf.shopee.ph/file/f08425e0b60ba5040a7d490d6cf4a7c4"></span>
+				<span><img src="https://cf.shopee.ph/file/b68e872bf1bc8a1aae1d118e448dd028"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/22c0d58cae53fe505861989cf53364b2"></span>
+				<span><img src="https://cf.shopee.ph/file/fd1ae4ba79eb1a94f378efedb80da184"></span>
+				<span><img src="https://talentview.asia/wp-content/uploads/LBC-Logo.png"style="padding:20px; width: 100%;"></span>
+			</div>
+			
+		</div>
+
+		<div class="foot-cont">
+			<label>FOLLOW US</label>
+
+			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></span>
+			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">Instagram</a></span>
+			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></span>
+			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></span>
+			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></span>
+			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">Tiktok</a></span>
+		</div>
+
+		<div class="foot-cont">
+			<label>SHOPAHOLIC PH APP DOWNLOAD</label>
+
+			<div class="download">
+
+				<span>
+					<img src="https://cf.shopee.ph/file/fc6cf82d5a0bc4f7fa18b6386893d2da">
+				</span>
+
+				<div class="apps">
+					<span><img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png"></span>
+					
+				</div>
+
+			</div>
+
+
+			
+		</div>
+		
+	</footer>
+
+</body>
+
+<!-- script -->
+
+<script type="text/javascript">
+	
+let credit = document.getElementById("credit1");
+let debit = document.getElementById("debit1");
+let paypal = document.getElementById("paypal1");
+let gcash = document.getElementById("gcash1");
+
+
+let creditform = document.getElementById('credit-form');
+let debitform = document.getElementById('debit-form');
+let paypalform = document.getElementById('paypal-form');
+let gcashform = document.getElementById('gcash-form');
+
+function credit1() {
+
+		// showing the form that I hide 
+	creditform.classList.add('credit-form-click');
+
+	// debitform.classList.remove('debit-form-click');
+	paypalform.classList.remove('paypal-form-click');
+	gcashform.classList.remove('gcash-form-click');
+
+
+	// adding border effect by classlist*(form css)
+	credit.classList.add('credit-click');
+	debit.classList.remove('debit-click');
+	paypal.classList.remove('paypal-click');
+	gcash.classList.remove('gcash-click');
+
+
+}
+function debit1() {
+		// showing the form that I hide 
+	// debitform.classList.add('debit-form-click');
+	creditform.classList.remove('credit-form-click');
+	paypalform.classList.remove('paypal-form-click');
+	gcashform.classList.remove('gcash-form-click');
+
+	// adding border effect by classlist*(form css)
+	credit.classList.remove('credit-click');
+	debit.classList.add('debit-click');
+	paypal.classList.remove('paypal-click');
+	gcash.classList.remove('gcash-click');
+}
+function paypal1() {
+
+		// showing the form that I hide 
+	paypalform.classList.add('paypal-form-click');
+	creditform.classList.remove('credit-form-click');
+	// debitform.classList.remove('debit-form-click');
+	gcashform.classList.remove('gcash-form-click');
+	
+	// adding border effect by classlist*(form css)
+	credit.classList.remove('credit-click');
+	debit.classList.remove('debit-click');
+	paypal.classList.add('paypal-click');
+	gcash.classList.remove('gcash-click');
+}
+function gcash1() {
+
+	// showing the form that I hide
+	creditform.classList.remove('credit-form-click');
+	// debitform.classList.remove('debit-form-click');
+	paypalform.classList.remove('paypal-form-click');
+	gcashform.classList.add('gcash-form-click'); 
+	
+
+	// adding border effect by classlist*(form css)
+	credit.classList.remove('credit-click');
+	debit.classList.remove('debit-click');
+	paypal.classList.remove('paypal-click');
+	gcash.classList.add('gcash-click');
+}
+
+</script>
+
+<!-- inpt text limit -->
+<script type="text/javascript">
+
+// let text = document.getElementById('alert')	;
+	
+// function textLength(value){
+//    var maxLength = 200;
+//    if(value.length > maxLength) return false;
+//    return true;
+// }
+
+// document.getElementById('text').onkeyup = function(){
+//      if(!textLength(this.value)) text.classList.add('alert-show');
+// }
+
+</script>
+
+<!-- opig modal -->
+
+<script type="text/javascript">
+	
+let modal = document.getElementById('Modal-Popup');
+let close = document.getElementById('Modal-Popup');
+let save = document.getElementById('Modal-Popup');
+
+
+function openModal() {
+	modal.classList.add('open-modal');
+}
+
+function closeModal() {
+	close.classList.remove('open-modal');
+}
+function saveModal() {
+	close.classList.remove('open-modal');
+}
+
+
+</script>
+
+<!-- opeing teh recipt popup -->
+<script type="text/javascript">
+	
+let reciept = document.getElementById('reciept-popup');
+
+
+function openRec() {
+	reciept.classList.add('toggle-reciept');
+}
+
+let closecheck = document.getElementById('reciept-popup');
+function closeCheck() {
+	closecheck.classList.remove('toggle-reciept');
+}
+</script>
+
+
+<!-- print the recipt -->
+
+<script type="text/javascript">
+	
+// let print = document.getElementById('printform');
+// let nav = document.getElementById('reciept');
+
+// function window.print(){
+// 	print.getElementById('printform');
+// 	// nav.style.display = 'none';
+// 	nav.getElementById.remove('printnone');
+// }	
+
+</script>
+
+
+</html>

@@ -1,0 +1,294 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #f7f7f7;
+}
+.support-cont{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	padding-top: 90px;
+	background: #0000001a;
+}
+.cont{
+	background: #fff;
+	width: 100%;
+	height: 455px;
+	position: relative;
+	display: flex;
+	box-shadow: 0 0 10px 2px lightgrey;
+	border-radius: 5px;
+}
+
+.claim-cont{
+	width: 360px;
+	height: 100%;
+/*	background: green;*/
+}
+.faq{
+	width: 100%;
+	height: 170px;
+	background: #fff;
+	border-bottom: 2px solid #0000001a;
+	padding: 20px;
+}
+.faq label{
+	font-weight: bolder;
+	padding-bottom: 10px;
+}
+.faq li{
+	padding: 5px 0;
+}
+.faq a{
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+}
+.faq a:hover{
+	color: #ff523b;
+}
+
+.category{
+	width: 100%;
+	height: 285px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+}
+.category label{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-weight: bolder;
+}
+.first-category{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+.first-category span{
+	width: 94px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+.first-category span:hover{
+	background: #f7f7f7;
+	border-radius: 10px;
+}
+.first-category img{
+	width: 30px;
+}
+.first-category small{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.chat-cont{
+	width: 70%;
+	height: 100%;
+/*	background: pink;*/
+	border-right: 2px solid #0000001a;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #0000001a;
+}
+.shop-icon{
+	width: 60px;
+	padding: 10px;
+}
+.shop-icon img{
+	width: 100%;
+	border-radius: 10px;
+
+}
+.info{
+	height: 40px;
+/*	background: white;*/
+}
+.info h3{
+	font-size: 15px;
+	font-weight: bolder;
+
+}
+.info p{
+	font-size: 13px;
+	margin-top: -5px;
+
+}
+.chat-box{
+	width: 100%;
+	height: 335px;
+	max-height: 335px;
+	overflow-y: scroll;
+	background: #0000000d;
+	padding: 10px;
+}
+.robot{
+	width: 40px;
+	border-radius: 50%;
+	height: 40px;
+	background: #fff;
+	padding: 5px;
+	box-shadow: 0 0 10px 1px lightgrey;
+}
+.robot img{
+	width: 100%;
+/*	border-radius: 50%;*/
+}
+.chat-head{
+	width: auto;
+	display: flex;
+	align-items: center;
+	margin: 15px;
+}
+.chat-head span{
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;*/
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 13px;
+	box-shadow: 0 0 10px 1px lightgrey;
+}
+
+.chat-head2{
+	width: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin: 15px;
+}
+.chat-head2 span{
+	width: auto;
+	height: 40px;
+	padding: 10px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	border-radius: 10px;
+	font-size: 13px;
+	box-shadow: 0 0 10px 1px lightgrey;
+}
+.user1{
+	width: 40px;
+	border-radius: 50%;
+	height: 40px;
+	background: #fff;
+/*	padding: 5px;*/
+	box-shadow: 0 0 10px 1px lightgrey;
+}
+.user1 img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+/*tracking cont*/
+.tracking-cont{
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+	display: flex;
+}
+.tracking-cont img{
+	width: 90px;
+	margin-right: 5px;
+}
+.track-btn{
+	width: 90px;
+	height: 30px;
+	background: #000;
+	color: #fff;
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+.chat-foot{
+	width: 100%;
+	height: 60px;
+/*	background: grey;*/
+	border-top: 1px solid #0000001a;
+	display: flex;
+	align-items: center;
+}
+.chat-foot input{
+	width: 100%;border: none;
+	padding-left: 20px;
+	font-size: 13px;
+	outline: none;
+	outline-color: none;
+}
+.chat-foot span{
+	margin-right: 10px;
+}
+.chat-foot i{
+	color: #000;
+	font-size: 25px;
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border-radius: 50%;
+/*	border: 2px solid #000;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.chat-foot i:hover{
+	background: #000;
+	color: #fff;
+}
+
+/*resonsive*/
+
+@media only screen and  (max-width:733px){
+	.support-cont{
+		height: 100%;
+		padding: 10px;
+		padding-top: 95px;
+	}
+	.cont{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.chat-cont{
+		width: 100%;
+		border-right: none;
+		border-bottom: 2px solid #f7f7f7;
+	}
+	.faq{
+		border-top: 2px dotted #f7f7f7;
+	}
+	.claim-cont{
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+
+@media only screen and  (max-width:450px){
+	.support-cont{
+		height: 100%;
+		padding: 0px;
+		padding-top: 95px;
+	}
+
+}
+
+

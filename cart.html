@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+	<link rel="stylesheet" type="text/css" href="product-view-style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Cart</title>
+</head>
+<body>
+
+		<!-- navigation-->
+	<nav class="navigation">
+
+		<!-- logo -->
+		<div class="logo">
+			<h1><a href="main.html"><span style="color: #EE4D2D;">Shop</span>aholic<span style="color: #EE4D2D;">ph</span></a></h1>
+		</div>
+
+		<!-- navlinks icon -->
+		<div class="icon-cont">
+			<a href="user-login.html"><i class="fa-regular fa-user"></i></a>
+			<a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+			<a href="#"><i class="fa-regular fa-heart" id="heart"></i></a>
+			<a href="contact-support.html"><i class="fa-solid fa-headset"></i></a>
+		</div>
+
+	</nav>
+
+	<!-- productnavlinks -->
+			<div class="product-cont">
+				
+				<!-- <i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i> -->
+
+				<div class="navlinks">
+					<i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i>
+					<ul>
+						<li><a href="main.html#newin">NEW IN</a></li>
+						<li><a href="main.html#dress">TRENDS</a></li>
+						<li><a href="main.html">SALE</a></li>
+						<li><a href="main.html">CLOTHING</a></li>
+						<li><a href="main.html">FURNITURES</a></li>
+						<li><a href="main.html#dress">DRESSES</a></li>
+						<li><a href="main.html">TOPS</a></li>
+						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
+						<li><a href="main.html">BEACHWEAR</a></li>
+					</ul>
+
+					<div class="search">
+						<input type="text" name="" maxlength="30">
+						<i class="fa-solid fa-search"></i>
+					</div>
+				</div>
+
+				<div class="navlink-mobile" id="navlink-mobile-open">
+					
+					<ul>
+						<li><a href="main.html#newin">NEW IN</a></li>
+						<li><a href="main.html#dress">TRENDS</a></li>
+						<li><a href="main.html">SALE</a></li>
+						<li><a href="main.html">CLOTHING</a></li>
+						<li><a href="main.html">FURNITURES</a></li>
+						<li><a href="main.html#dress">DRESSES</a></li>
+						<li><a href="main.html">TOPS</a></li>
+						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
+						<li><a href="main.html">BEACHWEAR</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+<div class="main-cont">
+
+	<!-- cart contaier -->
+
+			<div class="cart-cont">
+				
+				<!-- cart Item -->
+				<div class="cart-Item">
+					<table>
+
+						
+						
+						<tr>
+							<!-- <th class="action">Action</th> -->
+							<th>Product</th>
+							<th>Quantity</th>
+							<th colspan="2">Subtotal</th>
+						</tr>
+	
+
+
+						<!-- fist Item -->
+						<tr id="remove">
+
+							<td class="remove-check" width="50px">
+								<div class="checks">
+									<input type="checkbox">
+								</div>
+							</td>
+							<td>
+
+								<div class="cart-image">
+									<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+
+									<div class="info">
+										<p>Puff Sleeve Floral Top</p>
+										<small>Price: ₱283</small>
+										<br><label onclick="removeFun()">Remove</label>
+									</div>
+								</div>
+
+							</td>
+							<td><input type="number" value="1" id="quant"></td>
+							<td id="price1">₱283</td>
+
+							<!-- <td><input type="checkbox" class="check"></td> -->
+						</tr>
+
+						<!-- second Item -->
+						<tr id="remove1">
+
+							<td class="remove-check">
+								<div class="checks">
+									<input type="checkbox" >
+								</div>
+							</td>
+
+							<td>
+
+								<div class="cart-image">
+									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp">
+
+									<div class="info">
+										<p>Zebbra Sleeve Top</p>
+										<small>Price: ₱199<small>
+										<br><label onclick="removeFun1()">Remove</label>
+									</div>
+								</div>
+
+							</td>
+							<td><input type="number" value="1" id="quant"></td>
+
+							<td id="price2" >₱199</td>
+
+							<!-- <td><input type="checkbox" class="check"></td> -->
+						</tr>
+
+						<!-- third Item -->
+						<tr id="remove2">
+
+							<td class="remove-check" width="50px">
+								<div class="checks">
+									<input type="checkbox" >
+								</div>
+							</td>
+
+							<td>
+
+								<div class="cart-image">
+									<img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416872318a5096c977481daeca6b96e8e9f799_thumbnail_900x.webp">
+
+									<div class="info">
+										<p>Black Dress</p>
+										<small>Price: ₱269<small>
+										<br><label onclick="removeFun2()">Remove</label>
+									</div>
+								</div>
+
+							</td>
+							<td><input type="number" value="1" id="quant"></td>
+
+							<td id="price3">₱269 </td>
+
+							<!-- <td><input type="checkbox" class="check"></td> -->
+						</tr>
+
+						<!-- foutrth Item -->
+						<tr id="remove3">
+
+							<td class="remove-check" width="50px">
+								<div class="checks">
+									<input type="checkbox" >
+								</div>
+							</td>
+
+							<td>
+
+								<div class="cart-image">
+									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/16671815890a271ecd70886a1bb01eaa7bfd3b5e4a_thumbnail_900x.webp">
+
+									<div class="info">
+										<p>Silky Dress</p>
+										<small>Price: ₱200<small>
+										<br><label onclick="removeFun3()">Remove</label>
+									</div>
+								</div>
+
+							</td>
+							<td><input type="number" value="1" id="quant"></td>
+
+							<td id="price3">₱200</td>
+
+						</tr>
+
+
+					</table>
+
+
+					<!-- total -->
+					<div class="total-price">
+						
+						<table>
+							<tr>
+								<td><i class="fa-solid fa-truck-fast" style="padding-right: 5px;"></i>Shipping Fee</td>
+								<td id="ship">₱283</td>
+							</tr>
+							<tr>
+								<td><i class="fa-solid fa-ticket" style="padding-right: 5px;"></i>Voucher</td>
+								<td id="ship" style="color: #ff523b; font-weight: bold;">50% OFF</td>
+							</tr>
+
+							<tr>
+								<td>Order Total</td>
+								<td id="total" onchange="totalPrice()"><small style="text-decoration: line-through;padding-right: 5px; color: #ff523b;">₱1,234</small>₱617</td>
+							</tr>
+
+
+							<!-- check out -->
+							<tr>
+								<td colspan="2"><a href="checkout.html"><button>Check Out</button></a></td>
+							</tr>
+
+						</table>
+
+
+					</div>
+
+
+				</div>
+
+<!-- footer -->
+	<footer class="footer">
+
+		<div class="foot-cont">
+			<label>Costumer Service</label>
+
+			<a href="">Help Centre</a>
+			<a href="">ShopaholicPH Cares PH</a>
+			<a href="">Payment Methods</a>
+			<a href="">ShopaholicPay</a>
+			<a href="">ShopaholicPH Coins</a>
+			<a href="">Order Tracking</a>
+			<a href="">Free Shipping</a>
+			<a href="">Return & Refund</a>
+			<a href="">ShopaholicPH Guarantee</a>
+			<a href="">Overseas Product</a>
+			<a href="">Contact Us</a>
+
+		</div>
+
+		<div class="foot-cont">
+			<label>ABOUT SHOPEE</label>
+
+			<a href="">About Us</a>
+			<a href="">ShopaholicPH Blog</a>
+			<a href="">ShopaholicPH Careers</a>
+			<a href="">ShopaholicPH Policies</a>
+			<a href="">Privacy Policy</a>
+			<a href="">ShopaholicPH Mall</a>
+			<a href="">Seller Centre</a>
+			<a href="">Flash Deals</a>
+			<a href="">Media Contact</a>
+			
+		</div>
+
+		<div class="foot-cont">
+			
+			<label>PAYENT</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/f4fc50d716f0377a3bdc6ad1906f3be4"></span>
+				<span><img src="https://cf.shopee.ph/file/648aa3f65236a21cfb97a35e1644e399"></span>
+				<span><img src="https://cf.shopee.ph/file/8efc3b564e08e9e864ea83ab43d9f913"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/91720ed84858d490ca62142de0494559"></span>
+				<span><img src="https://cf.shopee.ph/file/4a1f1c2d9ee1820ccc9621b44f277387"></span>
+				<span><img src="https://www.psaserbilis.com.ph/Content/img/gcash-logo.png" width="100%" style="padding:10px"></span>
+			</div>
+
+			<label>LOGISTICS</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/631b5315df5e2e7a6360553c48c7b394"></span>
+				<span><img src="https://cf.shopee.ph/file/f08425e0b60ba5040a7d490d6cf4a7c4"></span>
+				<span><img src="https://cf.shopee.ph/file/b68e872bf1bc8a1aae1d118e448dd028"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/22c0d58cae53fe505861989cf53364b2"></span>
+				<span><img src="https://cf.shopee.ph/file/fd1ae4ba79eb1a94f378efedb80da184"></span>
+				<span><img src="https://talentview.asia/wp-content/uploads/LBC-Logo.png"style="padding:20px; width: 100%;"></span>
+			</div>
+			
+		</div>
+
+		<div class="foot-cont">
+			<label>FOLLOW US</label>
+
+			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></span>
+			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">Instagram</a></span>
+			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></span>
+			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></span>
+			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></span>
+			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">Tiktok</a></span>
+		</div>
+
+		<div class="foot-cont">
+			<label>SHOPAHOLIC PH APP DOWNLOAD</label>
+
+			<div class="download">
+
+				<span>
+					<img src="https://cf.shopee.ph/file/fc6cf82d5a0bc4f7fa18b6386893d2da">
+				</span>
+
+				<div class="apps">
+					<span><img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png"></span>
+					
+				</div>
+
+			</div>
+
+
+			
+		</div>
+		
+	</footer>
+
+
+			</div>
+</div>
+
+
+
+		
+</body>
+
+<!-- scriptto remove item -->
+<script type="text/javascript">
+	
+let remove = document.getElementById('remove');
+
+function removeFun() {
+	remove.remove('remove');
+}
+
+let remove1 = document.getElementById('remove1');
+
+function removeFun1() {
+	remove1.remove('remove1');
+}
+
+let remove2 = document.getElementById('remove2');
+
+function removeFun2() {
+	remove2.remove('remove2');
+}
+
+let remove3 = document.getElementById('remove3');
+
+function removeFun3() {
+	remove3.remove('remove3');
+}  
+
+</script>
+
+<!-- total -->
+<script>
+	
+ 
+
+</script>
+
+</html>
