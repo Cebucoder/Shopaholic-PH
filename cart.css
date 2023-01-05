@@ -10,9 +10,9 @@
 .cart-Item{
 	margin: 0px auto;
 }
-
-
-
+.action{
+	visibility: visible;
+}
 
 /*checkoox*/
 .checks input{
