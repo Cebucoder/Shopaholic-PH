@@ -294,6 +294,11 @@ body{
 }
 .promo1 img{
 	width: 250px;
+/*	margin: auto;*/
+/*	margin-top: -43.5px;*/
+}
+.promo1 a{
+	width: 250px;
 	margin: auto;
 	margin-top: -43.5px;
 }
@@ -321,8 +326,8 @@ body{
 	flex-wrap: wrap;
 }
 .cat-items{
-	width: 200px;
-	height:100px;
+	width: 195px;
+	height:90px;
 	background: #fff;
 	margin: 4px;
 	display: flex;
@@ -332,10 +337,16 @@ body{
 	padding-right: 10px;
 	font-family: 'Poppins', sans-serif;
 	position: relative;
+/*	transition: 0.3s;*/
 
+}
+.cat-items:hover{
+/*	transition: 0.3s;*/
+	opacity: .9;
 }
 .cat-items img{
 	width: 100%;
+	height: auto;
 }
 .cat-items small{
 	font-size: 18px;
