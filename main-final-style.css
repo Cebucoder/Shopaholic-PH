@@ -121,7 +121,10 @@ option{
 }
 .logo a{
 	text-decoration: none;
+	color: #000;
+
 }
+
 .logo span{
 	color: #FF6600;
 	padding-left: 10px;
@@ -133,8 +136,21 @@ option{
 }
 .icons ion-icon{
 	font-size: 25px;
-	padding: 5px;
-	margin: 0 20px;
+	padding: 10px;
+	margin: 0 16px;
+	opacity: .8;
+	border-radius: 5px;
+}
+.icons ion-icon:hover{
+	opacity: 1;
+	color: #000;
+	background: #f7f7f7;
+}
+.icons a{
+	color: #000;
+}
+.icons a:hover{
+	color: #000;
 }
 .prud-search{
 	width:50%;
@@ -156,6 +172,7 @@ option{
 	height: 35px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background: #FF6600;
 	border-radius: 50%;
 	position: absolute;
@@ -168,7 +185,8 @@ option{
 	opacity: 1;
 }
 .search-icon ion-icon{
-	padding-left: 5px;
+/*	padding-left: 5px;*/
+/*	font-weight: bolder;*/
 }
 .prud-search input{
 	width: 100%;
