@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
-	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
+	<link rel="stylesheet" type="text/css" href="main-final-style.css">
 	<link rel="stylesheet" type="text/css" href="product-view-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -14,69 +15,150 @@
 </head>
 <body>
 
+<div class="navigations">
+			<header class="topnav">
+
+		<div class="social-icons">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-youtube"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+		<div class="currency-lang">
+
+			<select name="currency" id="currency">
+			    <option value="Peso ₱">Peso</option>
+			    <option value="USD">USD</option>
+			    <option value="euro">EURO</option>
+			    <option value="yen">YEN</option>
+			    
+  			</select>
+
+  			<select name="lang" id="lang">
+			    <option value="en">English</option>
+			    <option value="ph">Pilipino</option>
+			    <option value="ph">Chinese</option>
+			    <option value="ph">Pilipino</option>
+  			</select>
+
+		</div>
+
+	</header>
+
+	<div class="logo-icon">
+		<div class="logo">
+			<a href="main-final.html"><h1>Shopaholic<span>PH</span></h1></a>
+
+			<div class="prud-search">
+				<input type="text" name="" placeholder="Search product here..">
+				<div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
+			</div>
+
+			<div class="icons">
+				
+				<ion-icon name="person-outline"></ion-icon>
+				<ion-icon name="cart-outline"></ion-icon>
+				<ion-icon name="heart-outline"></ion-icon>
+				<ion-icon name="headset-outline"></ion-icon>
+				
+			</div>
+		</div>
+
+		<div class="navlinks">
+			<ul>
+				<li>
+					<a href="">New in</a>
+				</li>
+				<li>
+					<a href="">Categories</a>
+				</li>
+				<li>
+					<a href="">Men's</a>
+				</li>
+				<li>
+					<a href="">Women's</a>
+				</li>
+				<li>
+					<a href="">Jewelry</a>
+				</li>
+				<li>
+					<a href="">Perfume</a>
+				</li>
+				<li>
+					<a href="">Furniture</a>
+				</li>
+				<li>
+					<a class="active" href="">Hot offers</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+
+	
+
+
+
+	<div class="mobile-nav-cont">
+		<div class="mobilenav">
+			
+			<ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon>
+			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
+			<ion-icon name="grid-outline"></ion-icon>
+
+		</div>
+
+		<!-- home popup -->
+		<div class="home-cont" id="open-home">
+			<div class="home">
+				
+			<ul>
+				<li>
+					<a href="main-final.html">Home</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+
+				<li>
+					<a href="" onclick="openCategory()">Categories</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+
+				<li>
+					<a href="">Men's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Women's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Jewelry</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Perfume</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Furniture</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<!-- <li>
+					<a class="active" href="">Hot offers</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li> -->
+			</ul>
+
+			</div>
+		</div>
+
+	</div>
 	
 <div class="main-cont">
 
-	<!-- navigation-->
-	<nav class="navigation">
-
-		<!-- logo -->
-		<div class="logo">
-			<h1><a href="main.html"><span style="color: #EE4D2D;">Shop</span>aholic<span style="color: #EE4D2D;">ph</span></a></h1>
-		</div>
-
-		<!-- navlinks icon -->
-		<div class="icon-cont">
-			<a href="user-login.html"><i class="fa-regular fa-user"></i></a>
-			<a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
-			<a href="#"><i class="fa-regular fa-heart" id="heart"></i></a>
-			<a href="contact-support.html"><i class="fa-solid fa-headset"></i></a>
-		</div>
-
-	</nav>
-
-	<!-- productnavlinks -->
-			<div class="product-cont">
-				
-				<!-- <i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i> -->
-
-				<div class="navlinks">
-					<i class="fa-solid fa-bars" id="menu" onclick="menuOpen()"></i>
-					<ul>
-						<li><a href="main.html#newin">NEW IN</a></li>
-						<li><a href="main.html#dress">TRENDS</a></li>
-						<li><a href="main.html">SALE</a></li>
-						<li><a href="main.html">CLOTHING</a></li>
-						<li><a href="main.html">FURNITURES</a></li>
-						<li><a href="main.html#dress">DRESSES</a></li>
-						<li><a href="main.html">TOPS</a></li>
-						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
-						<li><a href="main.html">BEACHWEAR</a></li>
-					</ul>
-
-					<div class="search">
-						<input type="text" name="" maxlength="30">
-						<i class="fa-solid fa-search"></i>
-					</div>
-				</div>
-
-				<div class="navlink-mobile" id="navlink-mobile-open">
-					
-					<ul>
-						<li><a href="main.html#newin">NEW IN</a></li>
-						<li><a href="main.html#dress">TRENDS</a></li>
-						<li><a href="main.html">SALE</a></li>
-						<li><a href="main.html">CLOTHING</a></li>
-						<li><a href="main.html">FURNITURES</a></li>
-						<li><a href="main.html#dress">DRESSES</a></li>
-						<li><a href="main.html">TOPS</a></li>
-						<li><a href="main.html">LINGERIE & LOUNGE</a></li>
-						<li><a href="main.html">BEACHWEAR</a></li>
-					</ul>
-
-				</div>
-
-			</div>
+	
 
 			<div class="product-view">
 				<div class="img-cont">
@@ -161,9 +243,8 @@
 
 				</div>
 			</div>
-</div>
 
-<!-- Rating and Reviews -->
+			<!-- Rating and Reviews -->
 			<div class="Ratings">
 				<h1>Customer Reviews ( 1000+ )</h1>
 
@@ -210,256 +291,12 @@
 				</div>
 			</div>
 
-
-
 <!-- pruduct card -->
 <div class="card-cont-mother">
 
 	<h1>Customers Also Viewed</h1>
 
-			<div class="cards-cont mt-3">
-
-				<!-- card1 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/1616467753402587f9b3054e99e51ee709c7f9c95b_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card1 -->
-
-				<!-- card2 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card2 -->
-
-				<!-- card3 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/10/1665364734dda0276e9985cb5c02ef1bcb73f303de_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card3 -->
-
-				<!-- card4 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/16671815890a271ecd70886a1bb01eaa7bfd3b5e4a_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card4 -->
-
-				<!-- card5 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/27/16668641073111b44e056fda1b1ce2bc15bbf464b2_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card5 -->
-
-				<!-- card6 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416872318a5096c977481daeca6b96e8e9f799_thumbnail_900x.webp"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-				<!-- card6 -->
-
-					<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/7-pink floral dress.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/7-yellow checkerd.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/8-black.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/8-red.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/9-green.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/9-white.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/5-navy blue.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/5-purple.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-beige.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-black.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-maroon.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-navy blue.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-old rose.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-peach.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/6-white.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/7-black stripe dress.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/7-black.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			<!-- card29 -->
-				<div class="cards">
-						<a href="product-view.html"><img src="./dress (1)/7-blue stripe.jpg"></a>
-
-						<div class="promo-tag">
-							<img src="promo.png">
-						</div>
-				</div>
-			<!-- card29 -->
-
-			</div>
+			
 </div>
 
 <div class="related-search">
@@ -493,7 +330,8 @@
 
 </div>
 
-	<!-- footer -->
+
+<!-- footer -->
 	<footer class="footer">
 
 		<div class="foot-cont">
@@ -514,7 +352,7 @@
 		</div>
 
 		<div class="foot-cont">
-			<label>ABOUT SHOPEE</label>
+			<label>ABOUT SHOPAHOLIC PH</label>
 
 			<a href="">About Us</a>
 			<a href="">ShopaholicPH Blog</a>
@@ -530,7 +368,7 @@
 
 		<div class="foot-cont">
 			
-			<label>PAYENT</label>
+			<label>PAYMENT</label>
 
 			<div class="pay-logo">
 				<span><img src="https://cf.shopee.ph/file/f4fc50d716f0377a3bdc6ad1906f3be4"></span>
@@ -591,7 +429,17 @@
 		
 	</footer>
 
+
+</div>
+
+
+	
+
 </body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 <script src="js/bootstrap.bundle.js"></script>
 
@@ -679,6 +527,20 @@ function wishOpen() {
 }
 
 
+
+</script>
+
+
+
+
+<!-- toggele the home slide -->
+<script type="text/javascript">
+	
+let openSlide = document.getElementById("open-home");
+
+function openHome() {
+	openSlide.classList.toggle("toggle-home");
+}
 
 </script>
 

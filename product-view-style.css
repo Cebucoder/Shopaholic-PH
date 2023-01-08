@@ -15,12 +15,13 @@ body{
 .product-view{
 	width: 100%;
 /*	max-width: 1500px;*/
-	height: 100%;
+	height: auto;
 	background: #fff;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
 /*	border-bottom: 2px solid red;*/
+	margin-top: 150px;
 }
 .img-cont{
 	width: 100%;
@@ -102,7 +103,7 @@ body{
 
 .Product-deatils{
 	width: 510px;
-	height: 100%;
+	height: auto;
 	padding: 0 0px 20px 20px;
 	display: flex;
 	flex-direction: column;
@@ -275,6 +276,7 @@ body{
 	padding: 30px;
 	overflow: hidden;
 	font-family: Muli,Arial,Helvetica,sans-serif !important;
+/*	background: pink;*/
 }
 .Ratings h1{
 	color: #000;

@@ -5,33 +5,158 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
 	<link rel="stylesheet" type="text/css" href="contact.css">
-	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
+	<link rel="stylesheet" type="text/css" href="main-final-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 	<title>Contact-Support</title>
 </head>
 <body>
 
 
-	<!-- navigation-->
-	<nav class="navigation">
+	<div class="navigations">
+			<header class="topnav">
 
-		<!-- logo -->
+		<div class="social-icons">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-youtube"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+		<div class="currency-lang">
+
+			<select name="currency" id="currency">
+			    <option value="Peso ₱">Peso</option>
+			    <option value="USD">USD</option>
+			    <option value="euro">EURO</option>
+			    <option value="yen">YEN</option>
+			    
+  			</select>
+
+  			<select name="lang" id="lang">
+			    <option value="en">English</option>
+			    <option value="ph">Pilipino</option>
+			    <option value="ph">Chinese</option>
+			    <option value="ph">Pilipino</option>
+  			</select>
+
+		</div>
+
+	</header>
+
+	<div class="logo-icon">
 		<div class="logo">
-			<h1><a href="main.html"><span style="color: #EE4D2D;">Shop</span>aholic<span style="color: #EE4D2D;">ph</span></a></h1>
+			<h1>Shopaholic<span>PH</span></h1>
+
+			<div class="prud-search">
+				<input type="text" name="" placeholder="Search product here..">
+				<div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
+			</div>
+
+			<div class="icons">
+				
+				<ion-icon name="person-outline"></ion-icon>
+				<ion-icon name="cart-outline"></ion-icon>
+				<ion-icon name="heart-outline"></ion-icon>
+				<ion-icon name="headset-outline"></ion-icon>
+				
+			</div>
+		</div>
+
+		<div class="navlinks">
+			<ul>
+				<li>
+					<a href="">New in</a>
+				</li>
+				<li>
+					<a href="">Categories</a>
+				</li>
+				<li>
+					<a href="">Men's</a>
+				</li>
+				<li>
+					<a href="">Women's</a>
+				</li>
+				<li>
+					<a href="">Jewelry</a>
+				</li>
+				<li>
+					<a href="">Perfume</a>
+				</li>
+				<li>
+					<a href="">Furniture</a>
+				</li>
+				<li>
+					<a class="active" href="">Hot offers</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+
+	
+
+
+
+	<div class="mobile-nav-cont">
+		<div class="mobilenav">
+			
+			<ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon>
+			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
+			<ion-icon name="grid-outline"></ion-icon>
 
 		</div>
 
-		<!-- navlinks icon -->
-		<div class="icon-cont">
-			<a href="user-login.html"><i class="fa-regular fa-user"></i></a>
-			<a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
-			<a href="#"><i class="fa-regular fa-heart" id="heart"></i></a>
-			<a href="contact-support.html"><i class="fa-solid fa-headset"></i></a>
+		<!-- home popup -->
+		<div class="home-cont" id="open-home">
+			<div class="home">
+				
+			<ul>
+				<li>
+					<a href="">Home</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+
+				<li>
+					<a href="" onclick="openCategory()">Categories</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+
+				<li>
+					<a href="">Men's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Women's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Jewelry</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Perfume</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Furniture</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<!-- <li>
+					<a class="active" href="">Hot offers</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li> -->
+			</ul>
+
+			</div>
 		</div>
 
-	</nav>
+	</div>
 
 	<div class="support-cont">
 
@@ -182,7 +307,11 @@
 		</div>
 
 
-		<!-- footer -->
+		
+		
+	</div>
+
+	<!-- footer -->
 	<footer class="footer">
 
 		<div class="foot-cont">
@@ -279,10 +408,24 @@
 		</div>
 		
 	</footer>
-		
-	</div>
 
 
 
 </body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- toggele the home slide -->
+<script type="text/javascript">
+	
+let openSlide = document.getElementById("open-home");
+
+function openHome() {
+	openSlide.classList.toggle("toggle-home");
+}
+
+</script>
+
 </html>

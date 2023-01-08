@@ -17,6 +17,7 @@
 	padding: 30px;
 	background: #f7f7f7;
 	margin: auto; 
+	padding-top: 180px;
 }
 .checkout-cont-form{
 	width: 100%;
@@ -844,6 +845,7 @@ table{
 @media only screen and (max-width:600px){
 	.checkout-cont{
 		padding: 5px;
+		padding-top: 120px;
 	}
 	.address-from{
 		width: 100%;

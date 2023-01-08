@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
 	<link rel="stylesheet" type="text/css" href="main-final-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
-	<link rel="stylesheet" type="text/css" href="cart.css">
-	<!-- <link rel="stylesheet" type="text/css" href="product-view-style.css"> -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
-	<title>Cart</title>
+	<title>Shoaholic-PH</title>
 </head>
 <body>
 
+	
+
+	<div class="main-cont">
+		
 		<div class="navigations">
 			<header class="topnav">
 
@@ -56,10 +56,11 @@
 
 			<div class="icons">
 				
-				<ion-icon name="person-outline"></ion-icon>
-				<ion-icon name="cart-outline"></ion-icon>
+				
 				<ion-icon name="heart-outline"></ion-icon>
 				<ion-icon name="headset-outline"></ion-icon>
+				<ion-icon name="cart-outline"></ion-icon>
+				<ion-icon name="person-outline"></ion-icon>
 				
 			</div>
 		</div>
@@ -156,188 +157,66 @@
 
 	</div>
 
-<div class="main-cont">
-
-	<!-- cart contaier -->
-
-			<div class="cart-cont">
-				
-				<!-- cart Item -->
-				<div class="cart-Item">
-					<table>
-
-						
-						
-						<tr>
-							<th class="action">Action</th>
-							<th>Product</th>
-							<th>Quantity</th>
-							<th colspan="2">Subtotal</th>
-						</tr>
-	
 
 
-						<!-- fist Item -->
-						<tr id="remove">
+	<!-- image slider intro -->
 
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox">
-								</div>
-							</td>
-							<td>
+	<div class="hero-slider">
+		
+		<div class="carousel slide" data-bs-ride="carousel" id="controllMeCarousel">
 
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+		<!-- carousel indecator -->
 
-									<div class="info">
-										<p>Puff Sleeve Floral Top</p>
-										<small>Price: ₱283</small>
-										<br><label onclick="removeFun()">Remove</label>
-									</div>
-								</div>
+		<div class="carousel-indicators">
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="0" class="active"></button>
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="1"></button>
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="2"></button>
+		</div>
+		<div class="carousel-inner">
 
-							</td>
-							<td><input type="number" value="1" id="quant"></td>
-							<td id="price1" onchange="result()">₱283</td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- second Item -->
-						<tr id="remove1">
-
-							<td class="remove-check">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Zebbra Sleeve Top</p>
-										<small>Price: ₱199<small>
-										<br><label onclick="removeFun1()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1" id="quant"></td>
-
-							<td id="price2" >₱199</td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- third Item -->
-						<tr id="remove2">
-
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416872318a5096c977481daeca6b96e8e9f799_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Black Dress</p>
-										<small>Price: ₱269<small>
-										<br><label onclick="removeFun2()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1" id="quant"></td>
-
-							<td id="price3">269 </td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- foutrth Item -->
-						<tr id="remove3">
-
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/16671815890a271ecd70886a1bb01eaa7bfd3b5e4a_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Silky Dress</p>
-										<small>Price: ₱200<small>
-										<br><label onclick="removeFun3()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1" id="quant"></td>
-
-							<td id="price4">250</td>
-
-						</tr>
-
-
-					</table>
-
-
-					<!-- total -->
-					<div class="total-price">
-						
-						<table>
-							<tr>
-								<td><i class="fa-solid fa-truck-fast" style="padding-right: 5px;"></i>Shipping Fee</td>
-								<td id="ship">₱283</td>
-							</tr>
-							<tr>
-								<td><i class="fa-solid fa-ticket" style="padding-right: 5px;"></i>Voucher</td>
-								<td id="ship" style="color: #ff523b; font-weight: bold;">50% OFF</td>
-							</tr>
-
-							<tr>
-								<td>Order Total</td>
-								<td id="total" onchange="totalPrice()"><small style="text-decoration: line-through;padding-right: 5px; color: #ff523b;">₱1,234</small>₱617</td>
-							</tr>
-
-
-							<!-- check out -->
-							<tr>
-								<td colspan="2"><a href="checkout.html"><button>Check Out</button></a></td>
-							</tr>
-
-						</table>
-
-
-					</div>
-
-
-				</div>
-
-
+			<div class="carousel-item active">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp"class="d-block w-100">
 
 
 			</div>
 
+			<div class="carousel-item">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/11/14/16684152035aeb2a9f0a19e29f5e874da59798f704_thumbnail_1920x.webp" class="d-block w-100">
+			</div>
+
+			<div class="carousel-item">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp" class="d-block w-100">
+			</div>
+
+		</div>
+
+<!-- carousel button  control -->
+
+	<button class="carousel-control-prev" data-bs-target="#controllMeCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</button>
+
+	<button class="carousel-control-next" data-bs-target="#controllMeCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</button>
+
+	</div>
+<!-- carousel button cpntrol end -->
+
+	</div>
+
+	<!-- image slider intro -->
 
 
-			<!-- footer -->
+
+	</div>
+
+
+<!-- footer -->
 	<footer class="footer">
 
 		<div class="foot-cont">
-			<label>Costumer Service</label>
+			<label>Customer Service</label>
 
 			<a href="">Help Centre</a>
 			<a href="">ShopaholicPH Cares PH</a>
@@ -430,66 +309,28 @@
 		</div>
 		
 	</footer>
-</div>
 
 
+	
 
-		
 </body>
+
+<!-- ion iconic -->
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- scriptto remove item -->
+<script src="js/bootstrap.bundle.js"></script>
+
+
+<!-- script fo the option -->
+
 <script type="text/javascript">
 	
-let remove = document.getElementById('remove');
-
-function removeFun() {
-	remove.remove('remove');
-}
-
-let remove1 = document.getElementById('remove1');
-
-function removeFun1() {
-	remove1.remove('remove1');
-}
-
-let remove2 = document.getElementById('remove2');
-
-function removeFun2() {
-	remove2.remove('remove2');
-}
-
-let remove3 = document.getElementById('remove3');
-
-function removeFun3() {
-	remove3.remove('remove3');
-}  
-
-</script>
-
-<!-- total -->
-
-
-<script>
-	
-let value = document.getElementById("quant").value;
-let price1 = document.getElementById("price1").innerHTML;
-// let price2 = document.getElementById("price2").value;
-// let price3 = document.getElementById("price3").value;
-// let price4 = document.getElementById("price4").value;
-// let total = document.getElementById("total").innerHTML;
-// total = [value*price1];
-// variableNumber = value*price1;
-
-function calculate() {
-	document.getElementById("price1").innerHTML = value*price1;
-}
-
 
 
 </script>
+
 
 <!-- toggele the home slide -->
 <script type="text/javascript">
@@ -501,6 +342,5 @@ function openHome() {
 }
 
 </script>
-
 
 </html>

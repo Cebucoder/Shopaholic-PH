@@ -26,7 +26,12 @@
 
 		<!-- navlinks icon -->
 		<div class="icon-cont">
-			<a href="user-login.html"><i class="fa-regular fa-user"></i></a>
+				
+			<a href="#">
+				<i class="fa-regular fa-user" onclick="acAction()"></i>
+			</a>
+
+
 			<a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
 			<a href="#"><i class="fa-regular fa-heart" id="heart"></i></a>
 			<a href="contact-support.html"><i class="fa-solid fa-headset"></i></a>
@@ -76,6 +81,20 @@
 				</div>
 
 			</div>
+
+			<!-- user profile -->
+			<div class="user-pofile" id="user-act">
+				<li>
+					<a href="">My Account</a>
+				</li>
+				<li>
+					<a href="">My Purchase</a>
+				</li>
+				<li>
+					<a href="user-login.html">Logout</a>
+				</li>
+			</div>
+			
 
 
 
@@ -1897,6 +1916,12 @@
 
 	</div>
 
+	<div class="back-to-top-cont">
+		<div class="back-to-top">
+		<i class="fa-solid fa-arrow-up"></i>
+		</div>
+	</div>
+
 
 </div>
 
@@ -2068,26 +2093,26 @@ var heart = document.getElementById('hearted');
 
 <script>
 
-var val = $.trim(this.value);
-if (val === "")
-  $('img').show();
-else {
-  $('img').hide();
-  $("img[alt*=" + val + "]").show();
-}
+// var val = $.trim(this.value);
+// if (val === "")
+//   $('img').show();
+// else {
+//   $('img').hide();
+//   $("img[alt*=" + val + "]").show();
+// }
 
-$(document).ready(function() {
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("card *").filter(function() {
+// $(document).ready(function() {
+//   $("#myInput").on("keyup", function() {
+//     var value = $(this).val().toLowerCase();
+//     $("card *").filter(function() {
 
-      if (value == "") {
-        $("cards").show();
-      }
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+//       if (value == "") {
+//         $("cards").show();
+//       }
+//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//     });
+//   });
+// });
 
 </script>
 
@@ -2116,6 +2141,17 @@ window.addEventListener('scroll',function(){
   
   lastScrollTop = scrollTop; //New Position Stored
 });
+</script>
+
+<!-- user action -->
+<script type="text/javascript">
+	
+let user =document.getElementById('user-act');
+
+function acAction() {
+	user.classList.toggle('user-pofile-toggle');
+}
+
 </script>
 
 
