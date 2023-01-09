@@ -682,8 +682,8 @@ cursor: pointer;
 		padding-right: 5px;
 	}
 	.cards{
-		width: 110px;
-		max-width: 192px;
+		width: 47%;
+/*		max-width: 192px;*/
 /*		width: 100%;*/
 		height: auto;
 	}
