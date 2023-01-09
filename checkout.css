@@ -6,10 +6,11 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-.mother-cont{
+/*.mother-cont{
 	margin: auto;
 	max-width: 1500px;
-}
+	position:;
+}*/
 .checkout-cont{
 	width: 100%;
 	max-width: 1500px;
@@ -17,7 +18,8 @@
 	padding: 30px;
 	background: #f7f7f7;
 	margin: auto; 
-	padding-top: 180px;
+/*	padding-top: 190px;*/
+	margin-top: 134px;
 }
 .checkout-cont-form{
 	width: 100%;
@@ -605,6 +607,8 @@ input::-webkit-inner-spin-button {
 	overflow-x: hidden;
 	transition: all 0.3s;
 	opacity: 0;
+	padding-bottom: 80px;
+	padding-top: 80px;
 
 }
 .toggle-reciept{
