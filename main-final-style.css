@@ -15,7 +15,8 @@ body{
 }
 .main-cont{
 	width: 100%;
-	height: 100vh;
+/*	height: 100vh;*/
+	height: 100%;
 	background: #f7f7f7;
 	max-width: 1500px;
 
@@ -406,13 +407,79 @@ option{
 /*hero top slider*/
 .hero-slider{
 	width: 100%;
-	height: 400px;
+	height:auto;
 /*	background: pink;*/
 	margin-top: 180px;
 	padding: 0 30px;
 }
 
 
+/*radom slider second cont*/
+.second-cont{
+	width: 100%;
+	height: 130px;
+	background: pink;
+	margin-top: 20px;
+	position: relative;
+}
+
+
+
+/*cards-cont*/
+.cards-conts{
+	width: 100%;
+	height: auto;
+	padding: 25px;
+}
+.cards-conts h1{
+	padding-bottom: 20px;
+	font-size: 24px;
+	font-weight: bolder;
+	font-family: 'Poppins',sans-serif;
+}
+/*cards-cont*/
+
+/*cards style*/
+.cards-items-cont{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.cards{
+/*	width: 180px;*/
+	width: 192px;
+	height: 250px;
+/*	border: 1px solid #000;*/
+	margin: 5px;
+	position: relative;
+	transition: 0.4s;
+	background: lightgrey;
+}
+.cards:hover{
+	transform: translateY(-5px);
+}
+.cards img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.promo-tag{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.promo-tag img{
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+}
+/*cards style end*/
 
 
 
@@ -519,7 +586,8 @@ cursor: pointer;
 	}
 	.logo-icon{
 		padding: 0 15px;
-		height: 60px;
+/*		height: 60px;*/
+/*		height: auto;*/
 	}
 	.logo{
 /*		padding:5px;*/
@@ -608,6 +676,24 @@ cursor: pointer;
 		margin-top: 10px;
 		margin-left: 0px;
 
+	}
+	.cards-conts{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.cards{
+		width: 110px;
+		max-width: 192px;
+/*		width: 100%;*/
+		height: auto;
+	}
+	.promo-tag{
+		width: 38px;
+		height: 38px;
+	}
+	.promo-tag img{
+		width: 38px;
+		height: 38px;
 	}
 
 }
