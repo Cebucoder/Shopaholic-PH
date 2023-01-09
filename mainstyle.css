@@ -558,6 +558,7 @@ cursor: pointer;
 	position: relative;
 	transition: 0.4s;
 	background: lightgrey;
+	box-shadow: 0 0 5px 2px lightgrey;
 }
 .cards:hover{
 	transform: translateY(-5px);
