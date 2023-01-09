@@ -8,6 +8,34 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
 	<title>Shoaholic-PH</title>
+
+
+<style type="text/css">
+		.cards .card2{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0;
+			transition: 1s;
+
+		}
+		.cards:hover .card2{
+			visibility: visible;
+			animation: fadeIn 1s;
+			opacity: 1;
+			
+		}
+		.promo-tag{
+			z-index: 1;
+		}
+		@keyframes fadeIn {
+  		0% { opacity: 0; }
+ 		 100% { opacity: 1; }
+		}
+	</style>
+
 </head>
 <body>
 
@@ -69,28 +97,28 @@
 			<ul>
 				<li>
 					<span class="pop">NEW</span>
-					<a href="">New in</a>
+					<a href="new.html">New Arrivals</a>
 				</li>
 				<li>
-					<a href="">Categories</a>
+					<a href="category.html">Categories</a>
+				</li>
+				<li >
+					<a href="men.html">Men's</a>
 				</li>
 				<li>
-					<a href="">Men's</a>
+					<a href="women.html">Women's</a>
 				</li>
 				<li>
-					<a href="">Women's</a>
+					<a href="jewelry.html">Jewelries</a>
 				</li>
 				<li>
-					<a href="">Jewelry</a>
+					<a href="perfume.html">Perfumes</a>
 				</li>
 				<li>
-					<a href="">Perfume</a>
+					<a href="funiture.html">Furnitures</a>
 				</li>
 				<li>
-					<a href="">Furniture</a>
-				</li>
-				<li>
-					<a class="active" href="">Hot offers</a>
+					<a href="hot-offers.html">Hot offers</a>
 				</li>
 			</ul>
 		</div>
@@ -123,34 +151,34 @@
 				</li>
 
 				<li>
-					<a href="" onclick="openCategory()">Categories</a>
+					<a href="category.html" onclick="openCategory()">Categories</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 
 				<li>
-					<a href="">Men's</a>
+					<a href="men.html">Men's</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="">Women's</a>
+					<a href="women.html">Women's</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="">Jewelry</a>
+					<a href="jewelry.html">Jewelries</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="">Perfume</a>
+					<a href="perfume">Perfumes</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="">Furniture</a>
+					<a href="funiture.html">Furnitures</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
-				<!-- <li>
-					<a class="active" href="">Hot offers</a>
+				<li>
+					<a href="">Hot offers</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
-				</li> -->
+				</li>
 			</ul>
 
 			</div>
@@ -177,6 +205,7 @@
 
 			<div class="carousel-item active">
 				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp"class="d-block w-100">
+
 
 
 			</div>
@@ -230,10 +259,16 @@
 
 	<!-- cards continair items -->
 	<div class="cards-items-cont">
+
+
+		<!---------------------------- WOMEN SECTION ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		
 		<!-- card1 -->
 				<div class="cards" id="newin">
 						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/1616467753402587f9b3054e99e51ee709c7f9c95b_thumbnail_900x.webp"></a>
+
+						<a href="product-view.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp" class="card2"></a>
+						
 
 						<div class="promo-tag">
 							<img src="promo.png">
@@ -245,6 +280,8 @@
 				<div class="cards">
 						<a href="product-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp"></a>
 
+						<a href="product-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/16657562146a2f56751c745d329f13af05ae57027b_thumbnail_900x.webp" class="card2"></a>
+
 						<div class="promo-tag">
 							<img src="promo.png">
 						</div>
@@ -254,6 +291,8 @@
 				<!-- card3 -->
 				<div class="cards">
 						<a href="product-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/10/1665364734dda0276e9985cb5c02ef1bcb73f303de_thumbnail_900x.webp"></a>
+
+						<a href="product-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/09/22/163230035495d791ae33dbc273018ba8e09b0919c9_thumbnail_900x.webp" class="card2"></a>
 
 						<div class="promo-tag">
 							<img src="promo.png">
@@ -265,6 +304,8 @@
 				<div class="cards">
 						<a href="product-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/16671815890a271ecd70886a1bb01eaa7bfd3b5e4a_thumbnail_900x.webp"></a>
 
+						<a href="product-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/11/11/1636599689eae42cf08f2579fd7aa91d92b0931a6e_thumbnail_900x.webp" class="card2"></a>
+
 						<div class="promo-tag">
 							<img src="promo.png">
 						</div>
@@ -273,7 +314,9 @@
 
 				<!-- card5 -->
 				<div class="cards">
-						<a href="product-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/27/16668641073111b44e056fda1b1ce2bc15bbf464b2_thumbnail_900x.webp"></a>
+						<a href="product-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/27/166686410960c0311ad7bf47735748f3188fddc7b4_thumbnail_900x.webp"></a>
+
+						<a href="product-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/27/166686411246d1da0304df2cf105c720edff9c2bd3_thumbnail_900x.webp" class="card2"></a>
 
 						<div class="promo-tag">
 							<img src="promo.png">
@@ -284,6 +327,85 @@
 				<!-- card6 -->
 				<div class="cards">
 						<a href="product-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416872318a5096c977481daeca6b96e8e9f799_thumbnail_900x.webp"></a>
+
+						<a href="product-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416879f46c3bbed88522c54f17ab42f9bb4e5f_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card6 -->
+
+
+
+				<!---------------------------- MEN SECTION ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+				<!-- card1 -->
+				<div class="cards" id="newin">
+						<a href="product-men-view1.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/11/03/16359110052eb8ab0290c404044a04a38a11611281_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-men-view1.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/11/03/1635911008855f5a279636b17f55f1e9333e7b71c2_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card1 -->
+
+				<!-- card2 -->
+				<div class="cards">
+						<a href="product-men-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328483076dd4d895f914285404c0c0a395523_thumbnail_900x.webp"></a>
+
+						<a href="product-men-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328505d558c7e185ba9c32e1b9cd2001f7743_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card2 -->
+
+				<!-- card3 -->
+				<div class="cards">
+						<a href="product-men-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/06/27/16562931399d04902d4374f84807cc5747e76405ac_thumbnail_900x.webp" class=""></a>
+
+
+						<a href="product-men-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/06/27/16562931420691a90c8d07108e25605a40fffd0a0e_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card3 -->
+
+				<!-- card4 -->
+				<div class="cards">
+						<a href="product-men-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/05/16517221375337e43ff74847764c49d31ff31500ed_thumbnail_900x.webp"></a>
+
+						<a href="product-men-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/05/1651722143c4f0db94d4ee26bee1e297b09376ac45_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card4 -->
+
+				<!-- card5 -->
+				<div class="cards">
+						<a href="product-men-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/01/14/1642150391d05c0398de370c9a923ecb3d81fef473_thumbnail_900x.webp"></a>
+
+						<a href="product-men-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/01/14/1642150393f8eaca0132d5c2f85b2dcbd67f693564_thumbnail_900x.webp" class="card2"></a>
+
+						<div class="promo-tag">
+							<img src="promo.png">
+						</div>
+				</div>
+				<!-- card5 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-men-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/10/23/16349835147d10a4a265b88a394be8d83c458a57e4_thumbnail_900x.webp"></a>
+
+						<a href="product-men-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/10/23/1634983517bd91a95dc1de3a60b1c796f56021e914_thumbnail_900x.webp" class="card2"></a>
 
 						<div class="promo-tag">
 							<img src="promo.png">
