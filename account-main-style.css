@@ -211,10 +211,12 @@ body{
 	opacity: 0.6;
 }
 .bank-btn{
-	position: absolute;
+	width: 100%;
+	height: auto;
 	bottom: 80px;
 	border-radius: 10px;
-	overflow: hidden;
+/*	overflow: hidden;*/
+	margin-top: 170px;
 
 }
 .bank-btn button{
@@ -224,6 +226,7 @@ body{
 	color: #fff;
 	opacity: .8;
 	font-size: 14px;
+	border-radius: 10px;
 }
 .bank-btn button:hover{
 	opacity: 1;
@@ -541,8 +544,31 @@ body{
 		width: 100%;
 /*		padding-left:0px;*/
 	}
+	.pass-form{
+		width: 100%;
+		background: #fff;
+	}
+	
 }
 
+@media only screen and (max-width:569px){
+	.pass-form{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.pass-form input{
+		width: 100%;
+	}
+	.pass-form label{
+		padding-bottom: 5px;
+	}
+	.save-pass{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+}
 
 
 
@@ -605,4 +631,5 @@ body{
 /*		max-width: 375px;*/
 		width: 100%;
 	}
+	
 }
