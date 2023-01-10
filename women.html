@@ -92,7 +92,13 @@
 				<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
 				<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
 				<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
-				<a href="#"><ion-icon name="person-outline"></ion-icon></a>
+				<a class="acc" href="#" onclick="openAccount()"><ion-icon name="person-outline">
+						<div class="account" id="Account">
+						<a href="user-login.html">Logout</a>
+						<a href="my-account.html">My Account</a>
+					</div>
+
+				</ion-icon></a>
 				
 			</div>
 		</div>
@@ -493,7 +499,7 @@ function openHome() {
 
 </script>
 
-
+<script type="text/javascript" src="./js/account.js"></script>
 
 
 </html>

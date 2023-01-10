@@ -3,19 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
-	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
 	<link rel="stylesheet" type="text/css" href="main-final-style.css">
-	<link rel="stylesheet" type="text/css" href="product-view-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="account-main-style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<title>Shopaholic</title>
+	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
+	<title>Shoaholic-PH</title>
+
+
 
 
 </head>
 <body>
 
-<div class="navigations">
+	
+
+	<div class="main-cont">
+		
+		<div class="navigations">
 			<header class="topnav">
 
 		<div class="social-icons">
@@ -56,6 +61,7 @@
 
 			<div class="icons">
 				
+				
 				<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
 				<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
 				<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
@@ -80,7 +86,7 @@
 					<a href="category.html">Categories</a>
 				</li>
 				<li >
-					<a href="men.html" style="color: #FF6600; font-weight: bolder;">Men's</a>
+					<a href="men.html">Men's</a>
 				</li>
 				<li>
 					<a href="women.html">Women's</a>
@@ -162,187 +168,128 @@
 		</div>
 
 	</div>
-	
-<div class="main-cont">
-
-	
-
-			<div class="product-view">
-				<div class="img-cont">
-					<div class="procuct-cont">
-						<div class="img-header">
-							<img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328483076dd4d895f914285404c0c0a395523_thumbnail_900x.webp" id="ProductImg">
-						</div>
-
-						<div class="proms">
-							<img src="promo.png">
-						</div>
-						
-
-						<div class="gallery">
-
-							<div class="img">
-								<img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328483076dd4d895f914285404c0c0a395523_thumbnail_900x.webp" class="smallImg">
-							</div>
-
-							<div class="img">
-								<img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328505d558c7e185ba9c32e1b9cd2001f7743_thumbnail_900x.webp" class="smallImg">
-							</div>
-
-							<div class="img">
-								<img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/1652332853e080358af9348553649f448d856bd563_thumbnail_900x.webp" class="smallImg">
-							</div>
-
-							<div class="img">
-								<img src="https://img.ltwebstatic.com/images3_pi/2022/05/12/16523328551d4404314c3db57ea9a64ee127f0e846_thumbnail_900x.webp" class="smallImg">
-							</div>
-
-						</div>
-					</div>
 
 
 
-					<!-- priduct name and deatils -->
-					<div class="Product-deatils">
-						
-						<div class="Product-name">
-							<h3>Men Mock Neck Shirt</h3>
-							<span class="sku">SKU: sm2202220650547633</span>
-							<span class="reviews">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star-half-stroke"></i>
+	<!--------------------------------------------------- Account Section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-								<span>(1000+ Reviews)</span>
-							</span>
-							<span class="hot-deals">
-								Hot Deals
-							</span>
-							<span class="price">
-								<h2>₱526
-								<span class="price2">₱752</span>
-								<span class="off">-30%</span>
-								</h2>
-							</span>
+	<div class="account-cont">
 
-						</div>
-
-						<h6 class="head-size">Size</h6>
-
-						<div class="size">
-							<span>XS</span>
-							<span>S</span>
-							<span>M</span>
-							<span>L</span>
-							<span>XL</span>
-						</div>
-
-						<div class="add-btn">
-							<button id="button">ADD TO CART</button>
-							<span class="heart">
-								<i class="fa-regular fa-heart" id="hearted" onclick="wishOpen()"></i>
-							</span>
-						</div>
-
-					</div>
-
+		<div class="profile-form">
+			<div class="profile">
+				<div class="user-img">
+					<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="user-image">
 				</div>
+
+				<div class="user-name">
+					<span>Name: Juan Dela Cruz</span>
+					<small>User Id: SPH-00001162023</small>
+				</div>
+
 			</div>
 
-			<!-- Rating and Reviews -->
-			<div class="Ratings">
-				<h1>Customer Reviews ( 1000+ )</h1>
+			<div class="bottom-cont">
+				<div class="myacount">
+					<div class="title" onclick="openAcc()">
+						<ion-icon name="person-outline"></ion-icon>
+						<span>My Account</span>
+					</div>
 
-				<div class="average-cont">
+					<div class="child-account" id="childAcc">
+							<li onclick="showProfile()"><a href="#profile">Profile</a></li>
+							<li onclick="showBank()"><a href="#Bank & Cards">Bank & Cards</a></li>
+							<li onclick="showPassword()"><a href="#change password">Change Password</a></li>
+					</div>
+				</div>
+
+				<div class="myacount">
+					<div class="title" onclick="purchase()">
+						<ion-icon name="receipt-outline"></ion-icon>
+						<span>My Purchase</span>
+					</div>
+				</div>
 					
-					<div class="rev1">
-						<p>Average Rating</p>
-						<span class="reviews">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-regular fa-star-half-stroke"></i>
-
-							<span style="color: #000;margin-left: 10px;">4.95</span>
-						</span>
+				<div class="myacount">
+					<div class="title" onclick="notif()">
+						<ion-icon name="notifications-outline"></ion-icon>
+						<span>Notifications</span>
 					</div>
 
-					<div class="rev2">
-						<p>Did the item fit well?</p>
-
-						<div class="prog-cont">
-							<label class="label">Small</label>
-							<div class="one"></div>
-							<label class="percent">20%</label>
-
-
-						</div>
-						<div class="prog-cont">
-							<label class="label">True-Size</label>
-							<div class="one2"></div>
-							<label class="percent">96%</label>
-
-						</div>
-						<div class="prog-cont">
-							<label class="label">Large</label>
-							<div class="one3"></div>
-							<label class="percent">40%</label>
-
-						</div>
-						
+					<div class="notif-account" id="notifications">
+							<li><a href="">Order Updates</a></li>
+							<li><a href="">Promotions</a></li>
+							<li><a href="">Wallets Updates</a></li>
+							<li><a href="">Activites</a></li>
+							<li><a href="">Shopaholic-PH Updates</a></li>
+					</div>
+				</div>
+					
+				<div class="myacount">
+					<div class="title" onclick="vouchers()">
+						<ion-icon name="ticket-outline"></ion-icon>
+						<span>My Voucher</span>
 					</div>
 
 				</div>
+					
+				<div class="myacount">
+					<div class="title" onclick="coins()">
+						<ion-icon name="cash-outline"></ion-icon>
+						<span>My Shopaholic-PH Points</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="account-form">
+			
+
+			<!-- Profile Sections -->
+			<div class="profile-section" id="profile-section">
+				<div class="header-profile">
+					<h3>My Profile</h3>
+					<small>Manage and protect your account</small>
+				</div>
 			</div>
 
-<!-- pruduct card -->
-<div class="card-cont-mother">
 
-	<h1>Customers Also Viewed</h1>
 
+			<!-- Bank Sections -->
+			<div class="bank-section" id="bank-section">
+				Bank
+			</div>
+
+
+
+
+			<!-- Passowrd Sections -->
+			<div class="password-section" id="password-section">
+				Password
+			</div>
 			
-</div>
+		</div>
+		
+	<div>
 
-<div class="related-search">
-	<h1>Related Searches</h1>
-
-	<!-- searches -->
-	<div class="searches">
-		<span>Trendy</span>
-		<span>BlousesMIXED</span> 
-		<span>COLORSCute</span> 
-		<span>Blouse</span>
-		<span>BohoFlorals</span>
-		<span>Print Blouses</span>
-		<span>Puff Sleeve Blouse</span>
-		<span>Boho Summer</span>
-		<span>Short Sleeve Blouses</span>
-		<span>Floral</span>
-		<span>Ditsy Print</span>
-		<span>Short Puff Sleeves</span>
-		<span>Boho Blouses & Tees</span>
-		<span>Puff Sleeve </span>
-		<span>Blouse</span>
-		<span>Top Blouses </span>
-		<span>Trendy Tops </span>
-		<span>Button</span>
-		<span>Floral Summer</span>
-		<span>Boho Blouses</span>
-		<span>OCCASION LOOKS</span>
-		<span>Top Floral Blouses</span>
 	</div>
 
+
+
+
+
+
+	
 </div>
+
+
+
 
 
 <!-- footer -->
 	<footer class="footer">
 
 		<div class="foot-cont">
-			<label>Costumer Service</label>
+			<label>Customer Service</label>
 
 			<a href="">Help Centre</a>
 			<a href="">ShopaholicPH Cares PH</a>
@@ -406,12 +353,12 @@
 		<div class="foot-cont">
 			<label>FOLLOW US</label>
 
-			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">About Us</a></span>
-			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">ShopaholicPH Blog</a></span>
-			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">ShopaholicPH Careers</a></span>
-			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">ShopaholicPH Policies</a></span>
-			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">Privacy Policy</a></span>
-			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">ShopaholicPH Mall</a></span>
+			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></span>
+			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">Instagram</a></span>
+			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></span>
+			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></span>
+			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></span>
+			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">Tiktok</a></span>
 		</div>
 
 		<div class="foot-cont">
@@ -437,107 +384,25 @@
 	</footer>
 
 
-</div>
-
-
 	
 
 </body>
 
+<!-- ion iconic -->
+
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
 <script src="js/bootstrap.bundle.js"></script>
 
-<script type="text/javascript">
-	
-	let menu = document.getElementById("navlink-mobile-open");
 
-	function menuOpen(){
-		menu.classList.toggle("navlink-mobile-open");
-	}
-
-</script>
+<!-- script fo the option -->
 
 <script type="text/javascript">
 	
-var ProductImg = document.getElementById("ProductImg");
-var SmallImg = document.getElementsByClassName("smallImg");
-
-SmallImg[0].onmouseover = function()
-{
-	ProductImg.src = SmallImg[0].src;
-}
-SmallImg[1].onmouseover = function()
-{
-	ProductImg.src = SmallImg[1].src;
-}
-SmallImg[2].onmouseover = function()
-{
-	ProductImg.src = SmallImg[2].src;
-}
-SmallImg[3].onmouseover = function()
-{
-	ProductImg.src = SmallImg[3].src;
-}
-
-</script>
-
-
-<!-- add to cart script -->
-<script type="text/javascript">
-	
-var noti = document.getElementById('cart');
-// var select = document.querySelector('select');
-var select = document.getElementById('button');
-
-{
-	select.addEventListener('click', (e)=>{
-		var add = Number(noti.getAttribute('cart-count')|| 0);
-		noti.setAttribute('cart-count', add + 1);
-		noti.classList.add('zero');
-	})
-
-}
 
 
 </script>
-
-<!-- add to heatrt script -->
-<script type="text/javascript">
-	
-var notif = document.getElementById('heart');
-// var select = document.querySelector('select');
-var heart = document.getElementById('hearted');
-
-{
-	heart.addEventListener('click', (e)=>{
-		var add = Number(notif.getAttribute('data-count')|| 0);
-		notif.setAttribute('data-count', add + 1);
-		notif.classList.add('zero1');
-	})
-
-}
-
-
-</script>
-
-<!-- script to toggle heart background -->
-
-<script type="text/javascript">
-	
-let wish = document.getElementById('hearted');
-
-function wishOpen() {
-	wish.classList.toggle('wish-open');
-}
-
-
-
-</script>
-
-
 
 
 <!-- toggele the home slide -->
@@ -551,7 +416,99 @@ function openHome() {
 
 </script>
 
-<script type="text/javascript" src="./js/account.js"></script>
 
+<!-- small slider script -->
+
+<!-- <script type="text/javascript">
+let items = document.querySelectorAll('.carousel .carousel-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+</script> -->
+
+<script type="text/javascript">
+	
+let child = document.getElementById("childAcc");
+let notifs = document.getElementById("notifications");
+let voucher = document.getElementById("#");
+let purchases = document.getElementById("#");
+let coin = document.getElementById("#");
+
+function openAcc() {
+	child.classList.toggle("toogle-account-child");
+	notifs.classList.remove("toogle-notif-child");
+
+}
+
+function notif() {
+	notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+
+}
+function vouchers() {
+	child.classList.remove("toogle-account-child");
+	notifs.classList.remove("toogle-notif-child");
+
+}
+
+function purchase() {
+	notifs.classList.remove("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+
+}
+function coins() {
+	notifs.classList.remove("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+
+}
+
+</script>
+
+
+
+<!-- show account child function -->
+
+<script type="text/javascript">
+	
+let profile = document.getElementById('profile-section');
+let bank = document.getElementById('bank-section');
+let password = document.getElementById('password-section');
+
+
+function showProfile() {
+	profile.classList.add("profile-show");
+	bank.classList.remove("bank-show");
+	password.classList.remove("password-show");
+
+
+}
+function showBank() {
+	bank.classList.add("bank-show");
+	profile.classList.remove("profile-show");
+	password.classList.remove("password-show");
+}
+function showPassword() {
+	password.classList.add("password-show");
+	bank.classList.remove("bank-show");
+	profile.classList.remove("profile-show");
+}
+
+</script>
+
+
+<!-- opeing account -->
+
+<script type="text/javascript" src="./js/account.js"></script>
 
 </html>

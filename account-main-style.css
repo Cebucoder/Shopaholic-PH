@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: #f7f7f7;
+}
+.account-cont{
+	width: 100%;
+	height: auto;
+	background: #f7f7f7;
+	margin-top: 120px;
+	padding: 20px;
+	display: flex;
+}
+.profile-form{
+	width: 250px;
+/*	max-width: 300px;*/
+	min-width: 250px;
+	height: 100vh;
+/*	background: #f7f7f7;*/
+	border-radius: 10px;
+}
+
+
+.account-form{
+	width: 80%;
+	height: 100vh;
+	background: #fff;
+	margin-left: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -1px lightgray;
+	padding: 10px;
+}
+
+/*pfile*/
+.profile-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	background: pink;
+	display: none;
+}
+.profile-show{
+	display: block;
+}
+.header-profile{
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	border-bottom: 2px solid lightgrey;
+}
+
+
+
+
+
+/*Bank*/
+.bank-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	background: pink;
+	display: none;
+}
+.bank-show{
+	display: block;
+}
+
+
+
+
+/*password*/
+.password-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	background: pink;
+	display: none;
+}
+.password-show{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile{
+	width: 100%;
+	height: 200px;
+	background: #ffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:10px;
+/*	margin-top: 20px;*/
+	border-radius: 10px;
+	box-shadow: 0 0 10px -1px lightgray;
+}
+.user-img{
+	width: 110px;
+	height: 110px;
+	border-radius: 100%;
+	background: #f7f7f7;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 10px;
+}
+.user-img img{
+	width: 100%;
+	height: auto;
+
+}
+.user-name{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	margin-top: 15px;
+/*	background: pink;*/
+	font-size: 13px;
+}
+.user-name span{
+	display: flex;
+	align-items: center;
+	padding-bottom: 15px;
+}
+.bottom-cont{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	margin-top: 5px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px -1px lightgray;
+}
+.myaccount{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.title{
+	width: 100%;
+	height: auto;
+	padding: 2px 0;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	cursor: pointer;
+	display: flex;
+	position: relative;
+}
+.title span{
+	font-size: 14px;
+}
+.title ion-icon{
+	padding-right: 15px;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.title:hover{
+	color: #FF6600;
+}
+.child-account{
+	width: 100%;
+	height: auto;
+/*	position: absolute;*/
+	padding: 10px;
+/*	background: pink;*/
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 0px;
+/*	background: pink;*/
+	margin-top: -21px;
+	transition: 0.1s;
+/*	opacity: 0;*/
+}
+.toogle-account-child{
+	height: auto;
+	margin-top: 0px;
+	transition: 0.1s;
+	opacity: 1;
+}
+.child-account li{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding: 3px 0;
+	padding-left: 23px;
+}
+.child-account a{
+	text-decoration: none;
+	color: #000;
+	color: #000000ca;
+}
+.child-account a:hover{
+	color: #FF6600;
+}
+
+
+
+/*notifications*/
+
+.notif-account{
+	width: 100%;
+	height: auto;
+/*	position: absolute;*/
+	padding: 10px;
+/*	background: pink;*/
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 0px;
+/*	background: pink;*/
+	margin-top: -21px;
+	transition: 0.1s;
+}
+.toogle-notif-child{
+	height: auto;
+	margin-top: 0px;
+	transition: 0.1s;
+}
+.notif-account li{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding: 3px 0;
+	padding-left: 23px;
+}
+.notif-account a{
+	text-decoration: none;
+	color: #000;
+	color: #000000ca;
+}
+.notif-account a:hover{
+	color: #FF6600;
+}
+
+
+
+
+
+
+
+
+
+
+.topnav{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+	.account-cont{
+		margin-top: 110px;
+	}
+}
