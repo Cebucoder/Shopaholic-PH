@@ -196,7 +196,7 @@
 					</div>
 
 					<div class="child-account" id="childAcc">
-							<li onclick="showProfile()"><a href="#profile">Profile</a></li>
+							<li onclick="showProfile()"><a href="# profile">Profile</a></li>
 							<li onclick="showBank()"><a href="#Bank & Cards">Bank & Cards</a></li>
 							<li onclick="showPassword()"><a href="#change password">Change Password</a></li>
 					</div>
@@ -242,6 +242,16 @@
 		</div>
 
 		<div class="account-form">
+
+
+			<!-- sletect item will appear here -->
+			<div class="Selected-Item" id="Selected">
+				<div class="item-hero">
+					<img src="https://retail.curator.interworks.com/plugins/interworks/content/assets/images/dots-loading-animation.gif">
+				</div>
+
+				<label>Selected Item Will Appear Here.</label>
+			</div>
 			
 
 			<!-- Profile Sections -->
@@ -250,13 +260,71 @@
 					<h3>My Profile</h3>
 					<small>Manage and protect your account</small>
 				</div>
+
+				<div class="Profile-from">
+					<li>
+						<ion-icon name="person-outline"></ion-icon><label>Username : </label>
+						<small>Juan_Dela_Cruz</small>
+					</li>
+
+					<li>
+						<ion-icon name="id-card-outline"></ion-icon><label>Name : </label>
+						<small>Juan Dela Cruz</small>
+					</li>
+
+					<li>
+						<ion-icon name="mail-outline"></ion-icon><label>Email : </label>
+						<small>Juandelacruz2023@gmail.com</small>
+					</li>
+
+					<li>
+						<ion-icon name="call-outline"></ion-icon><label>Phone Number : </label>
+						<small>+63001092023</small>
+					</li>
+
+					<li class="gender">
+						<ion-icon name="transgender-outline"></ion-icon>
+						<label>Gender :</label>
+						<input type="radio" name="" checked>
+						<small>Male</small>
+						<input type="radio" name="">
+						<small>Female</small>
+						<input type="radio" name="">
+						<small>Other</small>
+					</li>
+
+					<li>
+						<div class="btn">
+							<button>Save</button>
+						</div>
+						<div class="btn">
+							<button>Edit</button>
+						</div>
+					</li>
+				</div>
 			</div>
 
 
 
 			<!-- Bank Sections -->
 			<div class="bank-section" id="bank-section">
-				Bank
+				<div class="bank-header">
+					<h3>Linked Accounts</h3>
+					<small>All transaction are secure and encrypted.</small>
+				</div>
+
+				<div class="bank-from">
+					<div class="bank-hero">
+						<ion-icon name="card-outline"></ion-icon>
+					
+						<label>No linked account yet</label>
+					</div>
+
+				</div>
+				<div class="bank-btn">
+						<button>Linked Account</button>
+						
+				</div>
 			</div>
 
 
@@ -264,10 +332,37 @@
 
 			<!-- Passowrd Sections -->
 			<div class="password-section" id="password-section">
-				Password
+				<div class="pass-header">
+					<h3>Manage your password</h3>
+					<small>All accounts are secure and encrypted.</small>
+				</div>
+
+				<form class="pass-form">
+					
+					<span>
+						<label>Change Password :</label>
+						<input type="password" autofocus name="" required>
+					</span>
+
+					<span>
+						<label>Confirm Password :</label>
+						<input type="password" name=""  required>
+					</span>
+
+					<span>
+						<label>Current Password :</label>
+						<input type="password" name=""  required>
+					</span>
+
+					<div class="save-pass">
+						<button type="btn">Change Password</button>
+					</div>
+
+				</form>
 			</div>
 			
 		</div>
+		<hr>
 		
 	<div>
 
@@ -444,32 +539,62 @@ let notifs = document.getElementById("notifications");
 let voucher = document.getElementById("#");
 let purchases = document.getElementById("#");
 let coin = document.getElementById("#");
+let sele = document.getElementById('Selected');
+let profiles = document.getElementById('profile-section');
+let banks = document.getElementById('bank-section');
+let passwords = document.getElementById('password-section');
 
 function openAcc() {
 	child.classList.toggle("toogle-account-child");
 	notifs.classList.remove("toogle-notif-child");
+	// sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+
+
 
 }
 
 function notif() {
 	notifs.classList.toggle("toogle-notif-child");
 	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+
 
 }
 function vouchers() {
 	child.classList.remove("toogle-account-child");
 	notifs.classList.remove("toogle-notif-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+
 
 }
 
 function purchase() {
 	notifs.classList.remove("toogle-notif-child");
 	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+
 
 }
 function coins() {
 	notifs.classList.remove("toogle-notif-child");
 	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+
 
 }
 
@@ -484,12 +609,14 @@ function coins() {
 let profile = document.getElementById('profile-section');
 let bank = document.getElementById('bank-section');
 let password = document.getElementById('password-section');
+let select = document.getElementById('Selected');
 
 
 function showProfile() {
 	profile.classList.add("profile-show");
 	bank.classList.remove("bank-show");
 	password.classList.remove("password-show");
+	select.remove("Selected"); 
 
 
 }
@@ -497,11 +624,13 @@ function showBank() {
 	bank.classList.add("bank-show");
 	profile.classList.remove("profile-show");
 	password.classList.remove("password-show");
+	select.remove("Selected");
 }
 function showPassword() {
 	password.classList.add("password-show");
 	bank.classList.remove("bank-show");
 	profile.classList.remove("profile-show");
+	select.remove("Selected");
 }
 
 </script>

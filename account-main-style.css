@@ -13,6 +13,7 @@ body{
 	width: 100%;
 	height: auto;
 	background: #f7f7f7;
+/*	background: #FCDEC8;*/
 	margin-top: 120px;
 	padding: 20px;
 	display: flex;
@@ -35,14 +36,50 @@ body{
 	border-radius: 10px;
 	box-shadow: 0 0 10px -1px lightgray;
 	padding: 10px;
+	position: relative;
 }
+
+
+
+.Selected-Item{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+/*	display: none;*/
+}
+.item-hero{
+	width: 90px;
+	height:90px;
+	background: #f7f7f7;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	border: 10px solid #FCDEC8;
+
+}
+.item-hero img{
+	width: 100%;
+
+}
+.Selected-Item label{
+	color: #000;
+	opacity: .5;
+}
+
+
 
 /*pfile*/
 .profile-section{
 	width: 100%;
 	height: auto;
 	padding: 20px;
-	background: pink;
+/*	background: pink;*/
 	display: none;
 }
 .profile-show{
@@ -51,9 +88,74 @@ body{
 .header-profile{
 	width: 100%;
 	height: auto;
-	padding: 10px 0;
-	border-bottom: 2px solid lightgrey;
+	padding: 5px 0;
+	border-bottom: 2px solid #f7f7f7;
 }
+.header-profile h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.header-profile small{
+	font-size: 13px;
+}
+.Profile-from{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px -1px lightgray;
+	border-radius: 10px;
+	padding: 0 15px;
+	background: #f7f7f7;
+/*	color: #fff;*/
+	margin-top: 10px;
+	font-size: 15px;
+}
+.Profile-from li{
+	list-style:none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+/*	background: grey;*/
+	text-align: left;
+
+
+	padding: 15px 0px;
+}
+.Profile-from label{
+/*	padding-right: ;*/
+	width: 150px;
+/*	display: flex-end;*/
+/*	text-align: right;*/
+	align-items: right;
+	padding-right: 20px;
+	opacity: .7;
+}
+.Profile-from ion-icon{
+	padding-right: 10px;
+	font-size: 18px;
+/*	color: #FF6600;*/
+
+}
+.Profile-from input{
+	width: 15px;
+	height: 15px;
+}
+.gender small{
+	padding:0  15px;
+}
+.btn button{
+	width: 110px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: #ff6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+}
+.btn button:hover{
+	opacity: 1;
+}
+
 
 
 
@@ -64,11 +166,67 @@ body{
 	width: 100%;
 	height: auto;
 	padding: 20px;
-	background: pink;
+/*	background: pink;*/
 	display: none;
 }
 .bank-show{
 	display: block;
+}
+.bank-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.bank-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.bank-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.bank-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.bank-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.bank-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.bank-btn{
+	position: absolute;
+	bottom: 80px;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+.bank-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+}
+.bank-btn button:hover{
+	opacity: 1;
 }
 
 
@@ -79,11 +237,70 @@ body{
 	width: 100%;
 	height: auto;
 	padding: 20px;
-	background: pink;
+/*	background: pink;*/
 	display: none;
 }
 .password-show{
 	display: block;
+}
+.pass-header{
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+.pass-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.pass-form{
+	width: 500px;
+	height: auto;
+	padding: 15px;
+/*	background: #FC9550;*/
+	background: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow:  0 0 10px -1px lightgray;
+	margin: auto;
+}
+.pass-form span{
+	padding: 10px 0;
+}
+.pass-form label{
+	padding-right: 10px;
+	font-size: 14px;
+	opacity: .7;
+}
+.pass-form input{
+	width: 300px;
+	height: 45px;
+	padding-left: 10px;
+	border-radius: 5px;
+/*	border: none;*/
+	outline-color: #FCDEC8;
+	font-size: 16px;
+	border:1px solid  #FCDEC8;
+}
+.save-pass{
+	width: 100%;
+	height: auto;
+	padding-left: 15px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.save-pass button{
+	padding: 10px 30px;
+	border-radius: 10px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	font-size: 14px;
+	opacity: .7;
+}
+.save-pass button:hover{
+	opacity: 1;
 }
 
 
@@ -299,11 +516,93 @@ body{
 
 
 
-
-
-
-@media only screen and (max-width:800px){
+@media only screen and (max-width:839px){
 	.account-cont{
-		margin-top: 110px;
+		flex-wrap: wrap;
+/*		max-width: 500px;*/
+		width: 100%;
+/*		flex-direction: column;*/
+/*		background: pink;*/
+/*		position: relative;*/
+	}
+	.account-form{
+		width: 100%;
+		padding: 0px;
+	}
+	.Profile-from li{
+		justify-content: left;
+	}
+	.profile-form{
+		width: 100%;
+		height: auto;
+		margin-bottom: 5px;
+	}
+	.profile-section{
+		width: 100%;
+/*		padding-left:0px;*/
+	}
+}
+
+
+
+
+@media only screen and (max-width:500px){
+	.account-cont{
+		padding: 10px;
+	}
+	.account-form{
+		padding: 0px;
+		margin-left: 0px;
+	}
+	.Selected-Item{
+		padding: 20px;
+	}
+	.item-hero{
+		width: 80px;
+		height: 80px;
+	}
+	.item-hero img{
+		width: 100%;
+	}
+	.Selected-Item label{
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width:475px){
+	.Profile-from {
+	    box-shadow: none;
+	    border-radius: 10px;
+/*	    background: #f7f7f7;*/
+	    /* color: #fff; */
+	    font-size: 13px;
+	    padding: 0px;
+	    background: none;
+	}
+	.Profile-from ion-icon{
+		padding-right: 5px;
+		font-size: 15px;
+	}
+	.Profile-from label{
+		width:115px ;
+/*		background: pink;*/
+		font-size: 12px;
+	}
+	.profile-section{
+		padding: 10px 10px;
+	}
+	.profile-form{
+		width: 100%;
+		height: auto;
+		margin-bottom: 5px;
+	}
+	.account-cont{
+		height: auto;
+		padding: 0;
+	}
+	.account-form{
+		height: auto;
+/*		max-width: 375px;*/
+		width: 100%;
 	}
 }

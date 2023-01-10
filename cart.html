@@ -205,7 +205,7 @@
 								</div>
 
 							</td>
-							<td><input type="number" value="1" id="quant"></td>
+							<td><input type="number" value="1" id="quant1"></td>
 							<td id="price1" onchange="result()">₱283</td>
 
 							<!-- <td><input type="checkbox" class="check"></td> -->
@@ -233,9 +233,9 @@
 								</div>
 
 							</td>
-							<td><input type="number" value="1" id="quant"></td>
+							<td><input type="number" value="1" id="quant2"></td>
 
-							<td id="price2" >₱199</td>
+							<td id="price2">₱199</td>
 
 							<!-- <td><input type="checkbox" class="check"></td> -->
 						</tr>
@@ -262,7 +262,7 @@
 								</div>
 
 							</td>
-							<td><input type="number" value="1" id="quant"></td>
+							<td><input type="number" value="1" id="quant3"></td>
 
 							<td id="price3">269 </td>
 
@@ -285,15 +285,15 @@
 
 									<div class="info">
 										<p>Silky Dress</p>
-										<small>Price: ₱200<small>
+										<small id="price">Price: ₱250<small>
 										<br><label onclick="removeFun3()">Remove</label>
 									</div>
 								</div>
 
 							</td>
-							<td><input type="number" value="1" id="quant"></td>
+							<td><input type="number" value="1" id="quant4"></td>
 
-							<td id="price4">250</td>
+							<td id="pricetots" onchange="addQuantity()">250</td>
 
 						</tr>
 
@@ -316,7 +316,7 @@
 
 							<tr>
 								<td>Order Total</td>
-								<td id="total" onchange="totalPrice()"><small style="text-decoration: line-through;padding-right: 5px; color: #ff523b;">₱1,234</small>₱617</td>
+								<td ><small style="text-decoration: line-through;padding-right: 5px; color: #ff523b;" id="total" onchange="addingQuant(this);">₱1,234</small>₱617</td>
 							</tr>
 
 
@@ -481,17 +481,15 @@ function removeFun3() {
 
 <script>
 	
-let value = document.getElementById("quant").value;
-let price1 = document.getElementById("price1").innerHTML;
-// let price2 = document.getElementById("price2").value;
-// let price3 = document.getElementById("price3").value;
-// let price4 = document.getElementById("price4").value;
-// let total = document.getElementById("total").innerHTML;
-// total = [value*price1];
-// variableNumber = value*price1;
+function addingQuant(){
+	let price1 = Number(document.getElementById("price1").value);
+	let quant1 = document.getElementById("price4").innerHTML;
+	// let quant2 = Number(document.getElementById("qunat2").value);
+	// let quant3 = Number(document.getElementById("qunat3").value);
+	// let quant4 = Number(document.getElementById("qunat4").value);
+	let sum =   price1 * quant1;
 
-function calculate() {
-	document.getElementById("price1").innerHTML = value*price1;
+	document.getElementById("pricetots").innerHTML = sum;
 }
 
 
