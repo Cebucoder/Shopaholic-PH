@@ -1170,6 +1170,40 @@ body{
 
 
 
+/*hero label*/
+.Selected-Item label{
+		padding-top: 25px;
+	}
+	.purchase-hero label{
+		padding-top: 25px;
+	}
+	.Promo-hero label{
+		padding-top: 25px;
+	}
+	.notifications-hero label{
+		padding-top: 25px;
+	}
+	.Wallet-hero label{
+		padding-top: 25px;
+	}
+	.Order-hero label{
+		padding-top: 25px;
+	}
+	.Activity-hero label{
+		padding-top: 25px;
+	}
+	.Update-hero label{
+		padding-top: 25px;
+	}
+	.Voucher-hero label{
+		padding-top: 25px;
+	}
+	.Point-hero label{
+		padding-top: 25px;
+	}
+
+
+
 
 
 
@@ -1268,6 +1302,33 @@ body{
 	}
 	.Selected-Item label{
 		font-size: 13px;
+	}
+	.purchase-hero label{
+		margin-bottom: 100px;
+	}
+	.Promo-hero label{
+		margin-bottom: 100px;
+	}
+	.notifications-hero label{
+		margin-bottom: 100px;
+	}
+	.Wallet-hero label{
+		margin-bottom: 100px;
+	}
+	.Order-hero label{
+		margin-bottom: 100px;
+	}
+	.Activity-hero label{
+		margin-bottom: 100px;
+	}
+	.Update-hero label{
+		margin-bottom: 100px;
+	}
+	.Voucher-hero label{
+		margin-bottom: 100px;
+	}
+	.Point-hero label{
+		margin-bottom: 100px;
 	}
 }
 
