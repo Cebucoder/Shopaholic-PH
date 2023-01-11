@@ -63,6 +63,7 @@ body{
 	border: 10px solid #FCDEC8;
 
 }
+
 .item-hero img{
 	width: 100%;
 
@@ -231,6 +232,681 @@ body{
 .bank-btn button:hover{
 	opacity: 1;
 }
+
+
+
+/*purhase section*/
+.purchase-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.purchase-show{
+	display: block;
+}
+.purchase-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.purchase-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.purchase-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.purchase-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.purchase-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.purchase-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.purchase-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.purchase-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.purchase-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+
+
+/*notications*/
+.notifications-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.notifications-show{
+	display: block;
+}
+.notifications-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.notifications-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.notifications-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.notifications-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.notifications-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.notifications-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.notifications-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.notifications-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.notifications-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+
+
+/*Order- Updates*/
+.Order-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Order-show{
+	display: block;
+}
+.Order-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Order-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Order-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Order-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Order-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Order-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Order-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Order-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Order-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+
+/*Promo- Updates*/
+.Promo-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Promo-show{
+	display: block;
+}
+.Promo-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Promo-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Promo-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;Wallet
+	margin: auto;
+}
+.Promo-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Promo-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Promo-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Promo-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Promo-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Promo-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+
+/*Wallets-Updates*/
+.Wallet-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Wallet-show{
+	display: block;
+}
+.Wallet-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Wallet-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Wallet-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Wallet-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Wallet-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Wallet-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Wallet-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Wallet-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Wallet-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+
+
+/*Activity-Updates*/
+.Activity-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Activity-show{
+	display: block;
+}
+.Activity-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Activity-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Activity-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Activity-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Activity-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Activity-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Activity-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Activity-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Activity-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+/*Activity-Updates*/
+.Update-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Update-show{
+	display: block;
+}
+.Update-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Update-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Update-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Update-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Update-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Update-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Update-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Update-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Update-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+/*Voucher-Updates*/
+.Voucher-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Voucher-show{
+	display: block;
+}
+.Voucher-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Voucher-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Voucher-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Voucher-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Voucher-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Voucher-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Voucher-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Voucher-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Voucher-btn button:hover{
+	opacity: 1;
+}
+
+
+
+
+/*Shop Points*/
+.Point-section{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+/*	background: pink;*/
+	display: none;
+}
+.Point-show{
+	display: block;
+}
+.Point-header{
+	width: 100%;
+	height: auto;
+/*	padding: 15px;*/
+/*	background: #f7f7f7;	*/
+}
+.Point-header h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.Point-from{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.Point-hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+/*	margin-top: 50px;*/
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+	margin-top: 100px;
+}
+.Point-hero ion-icon{
+	font-size: 90px;
+	color: #FCDEC8;
+}
+.Point-hero label{
+	font-size: 15px;
+	opacity: 0.6;
+}
+.Point-btn{
+	width: 100%;
+	height: auto;
+	bottom: 80px;
+	border-radius: 10px;
+/*	overflow: hidden;*/
+	margin-top: 170px;
+
+}
+.Point-btn button{
+	padding: 10px 20px;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	opacity: .8;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.Point-btn button:hover{
+	opacity: 1;
+}
+
+
 
 
 

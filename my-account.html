@@ -216,11 +216,11 @@
 					</div>
 
 					<div class="notif-account" id="notifications">
-							<li><a href="">Order Updates</a></li>
-							<li><a href="">Promotions</a></li>
-							<li><a href="">Wallets Updates</a></li>
-							<li><a href="">Activites</a></li>
-							<li><a href="">Shopaholic-PH Updates</a></li>
+							<li onclick="showOrder()"><a href="#Order Updates">Order Updates</a></li>
+							<li onclick="showPromo()"><a href="#Promotions">Promotions</a></li>
+							<li onclick="showWallet()"><a href="#Wallets">Wallets Updates</a></li>
+							<li onclick="showActivity()"><a href="#Activites">Activites</a></li>
+							<li onclick="showUpdates()"><a href="#ShopaholicPH Updates">Shopaholic-PH Updates</a></li>
 					</div>
 				</div>
 					
@@ -360,6 +360,186 @@
 
 				</form>
 			</div>
+
+
+			<!-- My purhase -->
+			<div class="purchase-section" id="purchase-section">
+				<div class="purchase-header">
+					<h3>My Purchase</h3>
+					<small>Mange your Your prchase items here</small>
+				</div>
+
+				<div class="purchase-from">
+					<div class="purchase-hero">
+						<ion-icon name="bag-handle-outline"></ion-icon>
+					
+						<label>You have no item purchase yet</label>
+					</div>
+
+				</div>
+
+				<div class="purchase-btn">
+					<a href="main-final.html"><button type="btn">Buy Now</button></a>
+				</div>
+			</div>
+
+
+
+			<!-- Notificatons -->
+			<div class="notifications-section" id="notifications-section">
+				<div class="notifications-header">
+					<h3>My Notifications</h3>
+					<small>Manage your notifications here.</small>
+				</div>
+
+				<div class="notifications-from">
+					<div class="notifications-hero">
+						<ion-icon name="notifications-outline"></ion-icon>
+					
+						<label>No notifications updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<!-- Order Updates -->
+			<div class="Order-section" id="Order-section">
+				<div class="Order-header">
+					<h3>My Order</h3>
+					<small>Manage your Order here.</small>
+				</div>
+
+				<div class="Order-from">
+					<div class="Order-hero">
+						<ion-icon name="reader-outline"></ion-icon>
+					
+						<label>No order updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<!-- Promo Updates -->
+			<div class="Promo-section" id="Promo-section">
+				<div class="Promo-header">
+					<h3>My Promo</h3>
+					<small>Manage your Promo here.</small>
+				</div>
+
+				<div class="Promo-from">
+					<div class="Promo-hero">
+						<ion-icon name="pricetags-outline"></ion-icon>
+					
+						<label>No promo updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Wallet Updates -->
+			<div class="Wallet-section" id="Wallet-section">
+				<div class="Wallet-header">
+					<h3>My Wallet</h3>
+					<small>Manage your Wallet here.</small>
+				</div>
+
+				<div class="Wallet-from">
+					<div class="Wallet-hero">
+						<ion-icon name="wallet-outline"></ion-icon>
+					
+						<label>No wallet updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Activity Updates -->
+			<div class="Activity-section" id="Activity-section">
+				<div class="Activity-header">
+					<h3>My Activity</h3>
+					<small>Manage your Activity here.</small>
+				</div>
+
+				<div class="Activity-from">
+					<div class="Activity-hero">
+						<ion-icon name="calendar-outline"></ion-icon>
+					
+						<label>No Activity updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Updates Updates -->
+			<div class="Update-section" id="Update-section">
+				<div class="Update-header">
+					<h3>My Shop Update</h3>
+					<small>Shopaholic PH Update.</small>
+				</div>
+
+				<div class="Update-from">
+					<div class="Update-hero">
+						<ion-icon name="wallet-outline"></ion-icon>
+					
+						<label>No Shop updates for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Voucher  -->
+			<div class="Voucher-section" id="Voucher-section">
+				<div class="Voucher-header">
+					<h3>My Voucher</h3>
+					<small>Manage you shop Voucher.</small>
+				</div>
+
+				<div class="Voucher-from">
+					<div class="Voucher-hero">
+						<ion-icon name="ticket-outline"></ion-icon>
+					
+						<label>No voucher available for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- SHop Points  -->
+			<div class="Point-section" id="Point-section">
+				<div class="Point-header">
+					<h3>My Point</h3>
+					<small>Manage you shop Point.</small>
+				</div>
+
+				<div class="Point-from">
+					<div class="Point-hero">
+						<ion-icon name="sparkles-outline"></ion-icon>
+					
+						<label>You have no available points for now</label>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
 			
 		</div>
 		<hr>
@@ -536,21 +716,30 @@ let items = document.querySelectorAll('.carousel .carousel-item')
 	
 let child = document.getElementById("childAcc");
 let notifs = document.getElementById("notifications");
-let voucher = document.getElementById("#");
-let purchases = document.getElementById("#");
-let coin = document.getElementById("#");
+let voucher = document.getElementById("Voucher-section");
+let purchases = document.getElementById("purchase-section");
+let coin = document.getElementById("Point-section");
 let sele = document.getElementById('Selected');
 let profiles = document.getElementById('profile-section');
 let banks = document.getElementById('bank-section');
 let passwords = document.getElementById('password-section');
+let notification = document.getElementById('notifications-section')
 
 function openAcc() {
 	child.classList.toggle("toogle-account-child");
 	notifs.classList.remove("toogle-notif-child");
-	// sele.remove("Selected"); 
+	sele.add("Selected"); 
 	profiles.classList.remove("profile-show");
 	banks.classList.remove("bank-show");
 	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	coin.classList.remove("Point-show");
+
 
 
 
@@ -563,16 +752,30 @@ function notif() {
 	profiles.classList.remove("profile-show");
 	banks.classList.remove("bank-show");
 	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.add("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
 
 
 }
 function vouchers() {
+	voucher.classList.add("Voucher-show");
 	child.classList.remove("toogle-account-child");
 	notifs.classList.remove("toogle-notif-child");
 	sele.remove("Selected"); 
 	profiles.classList.remove("profile-show");
 	banks.classList.remove("bank-show");
 	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	coin.classList.remove("Point-show");
+
+
 
 
 }
@@ -584,6 +787,16 @@ function purchase() {
 	profiles.classList.remove("profile-show");
 	banks.classList.remove("bank-show");
 	passwords.classList.remove("password-show");
+	purchases.classList.add("purchase-show");
+	notification.classList.remove("notifications-show");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
 
 
 }
@@ -594,6 +807,15 @@ function coins() {
 	profiles.classList.remove("profile-show");
 	banks.classList.remove("bank-show");
 	passwords.classList.remove("password-show");
+	notification.classList.remove("notifications-show");
+	purchases.classList.remove("purchase-show");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.add("Point-show");
+
 
 
 }
@@ -617,6 +839,13 @@ function showProfile() {
 	bank.classList.remove("bank-show");
 	password.classList.remove("password-show");
 	select.remove("Selected"); 
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
 
 
 }
@@ -625,15 +854,151 @@ function showBank() {
 	profile.classList.remove("profile-show");
 	password.classList.remove("password-show");
 	select.remove("Selected");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
 }
 function showPassword() {
 	password.classList.add("password-show");
 	bank.classList.remove("bank-show");
 	profile.classList.remove("profile-show");
 	select.remove("Selected");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
 }
 
 </script>
+
+
+
+
+
+<!--Show Notifiction child -->
+
+<script type="text/javascript">
+	
+let order = document.getElementById('Order-section');
+let promo = document.getElementById('Promo-section');
+let wallet = document.getElementById('Wallet-section');
+let activity = document.getElementById('Activity-section');
+let updates = document.getElementById('Update-section');
+
+
+function showOrder() {
+	order.classList.add("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	promo.classList.remove("Promo-show");
+	// notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
+
+}
+
+function showPromo() {
+	promo.classList.add("Promo-show");
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	// notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
+}
+
+function showWallet() {
+	wallet.classList.add("Wallet-show");
+	order.classList.remove("Order-show");
+	updates.classList.remove("Update-show");
+	activity.classList.remove("Activity-show");
+	promo.classList.remove("Promo-show");
+	// notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
+}
+
+function showActivity() {
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.remove("Update-show");
+	activity.classList.add("Activity-show");
+	promo.classList.remove("Promo-show");
+	// notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
+}
+
+function showUpdates() {
+	order.classList.remove("Order-show");
+	wallet.classList.remove("Wallet-show");
+	updates.classList.add("Update-show");
+	activity.classList.remove("Activity-show");
+	promo.classList.remove("Promo-show");
+	// notifs.classList.toggle("toogle-notif-child");
+	child.classList.remove("toogle-account-child");
+	sele.remove("Selected"); 
+	profiles.classList.remove("profile-show");
+	banks.classList.remove("bank-show");
+	passwords.classList.remove("password-show");
+	purchases.classList.remove("purchase-show");
+	notification.classList.remove("notifications-show");
+	voucher.classList.remove("Voucher-show");
+	coin.classList.remove("Point-show");
+
+
+}
+
+</script>
+
+
+
+
 
 
 <!-- opeing account -->
