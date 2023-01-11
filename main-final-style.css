@@ -416,7 +416,7 @@ option{
 
 .home-cont{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background: #3533338a;
 	position: fixed;
 	top: 110px;
@@ -487,6 +487,85 @@ option{
 	color: #FF6600;
 }
 .home ion-icon{
+	opacity: .8;
+}
+
+
+
+/*dashboards cont*/
+.dashboard-cont{
+	width: 100%;
+	height: 100vh;
+	background: #3533338a;
+	position: fixed;
+	top: 110px;
+	left: -100%;
+	z-index: -1;
+	opacity: 0;
+	transition: 0.4s;
+}
+/*toggle the home slide*/
+.toggle-dashboard{
+	left: 0;
+	opacity: 1;
+	transition: 0.4s;
+
+}
+
+/*categroy content collapse*/
+
+.dash-link{
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;*/
+	padding-top: 10px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.dash-link ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 5px;
+}
+.dash-link li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	border-bottom: 2px solid #f7f7f7;
+	justify-content: space-between;
+	transition: 0.3s;
+}
+
+.dash-link li:hover{
+	padding-left: 25px;
+	padding-right: 10px;
+	color: #FF6600;
+	opacity: 1;
+}
+.dash-link a{
+	text-decoration: none;
+	color: #000;
+	transition: 0.3s;
+	width: 100%;
+	height: 100%;
+/*	background: pink;*/
+}
+.dash-link a:hover{
+	color: #FF6600;
+}
+/*.dash-link li .active{
+	color: #FF6600;
+}*/
+.dash-link ion-icon{
 	opacity: .8;
 }
 

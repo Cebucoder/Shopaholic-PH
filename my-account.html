@@ -170,10 +170,7 @@
 
 
 
-		<!-- Open Dashboard -->
-		<div class="dashboard-cont"  id="dahsboard" >
-			
-		</div>
+		
 
 
 	</div>
@@ -693,9 +690,15 @@
 <script type="text/javascript">
 	
 let openSlide = document.getElementById("open-home");
+let openDash = document.getElementById("openDashboard");
 
 function openHome() {
 	openSlide.classList.toggle("toggle-home");
+	openHome.classList.remove("toggle-dashboard");
+}
+function openDashboard() {
+	openDashboard.classList.toggle("toggle-dashboard");
+	openSlide.classList.remove("toggle-home");
 }
 
 </script>

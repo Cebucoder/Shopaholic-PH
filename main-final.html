@@ -143,7 +143,7 @@
 			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
 			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
 			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
-			<ion-icon name="grid-outline"></ion-icon>
+			<ion-icon name="grid-outline" onclick="openDashboard()"></ion-icon>
 
 		</div>
 
@@ -151,7 +151,7 @@
 		<div class="home-cont" id="open-home">
 			<div class="home">
 				
-			<ul>
+			<ul id="ul-link">
 				<li>
 					<a href="main-final.html">Home</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
@@ -186,10 +186,28 @@
 					<a href="">Hot offers</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
+
 			</ul>
 
 			</div>
 		</div>
+
+
+		<!-- Open Dashboard -->
+			<div class="dashboard-cont" id="openDashboard">
+				<div class="dash-link" >
+					<ul>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="my-account.html">My Account</a>
+						</li>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="user-login.html">Logout</a>
+						</li>
+					</ul>
+			</div>
+			</div>
+
+
 
 	</div>
 
@@ -558,10 +576,20 @@
 <script type="text/javascript">
 	
 let openSlide = document.getElementById("open-home");
+let dashboard = document.getElementById("openDashboard");
+
 
 function openHome() {
 	openSlide.classList.toggle("toggle-home");
+	dashboard.classList.remove("toggle-dashboard");
+
 }
+
+function openDashboard() {
+	dashboard.classList.toggle("toggle-dashboard");
+	openSlide.classList.remove("toggle-home");
+}
+
 
 </script>
 
