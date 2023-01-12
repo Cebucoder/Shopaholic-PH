@@ -4,18 +4,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="./add-logo/5.png"/>
-	<link rel="stylesheet" type="text/css" href="main-final-style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
-	<link rel="stylesheet" type="text/css" href="cart.css">
-	<!-- <link rel="stylesheet" type="text/css" href="product-view-style.css"> -->
+	<link rel="stylesheet" type="text/css" href="main-final-style.css">
+	<link rel="stylesheet" type="text/css" href="product-view-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
-	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Shopaholic</title>
+
 </head>
 <body>
 
-		<div class="navigations">
+<div class="navigations">
 			<header class="topnav">
 
 		<div class="social-icons">
@@ -80,10 +79,10 @@
 					<a href="category.html">Categories</a>
 				</li>
 				<li >
-					<a href="men.html" >Men's</a>
+					<a href="men.html">Men's</a>
 				</li>
 				<li>
-					<a href="women.html">Women's</a>
+					<a href="women.html" style="color: #FF6600; font-weight: bolder;">Women's</a>
 				</li>
 				<li>
 					<a href="jewelry.html">Jewelries</a>
@@ -137,7 +136,7 @@
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="women.html">Women's</a>
+					<a href="women.html" style="color: #FF6600; font-weight: bolder;">Women's</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
@@ -162,185 +161,183 @@
 		</div>
 
 	</div>
-
+	
 <div class="main-cont">
 
-	<!-- cart contaier -->
-
-			<div class="cart-cont">
-				
-				<!-- cart Item -->
-				<div class="cart-Item">
-					<table>
-
-						
-						
-						<tr>
-							<th class="action">Action</th>
-							<th>Product</th>
-							<th>Quantity</th>
-							<th colspan="2">Subtotal</th>
-						</tr>
 	
 
+			<div class="product-view">
+				<div class="img-cont">
+					<div class="procuct-cont">
+						<div class="img-header">
+							<img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/1639014986dd44c038ee3842b0b05e1946016dddb2_thumbnail_900x.webp" id="ProductImg">
+						</div>
 
-						<!-- fist Item -->
-						<tr id="remove">
-
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox">
-								</div>
-							</td>
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Puff Sleeve Floral Top</p>
-										<small>Price: ₱283</small>
-										<br><label onclick="removeFun()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1" max="3" min="0" onchange="down()"  id="quantity"></td>
-							<td id="qprice">283</td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- second Item -->
-						<tr id="remove1">
-
-							<td class="remove-check">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/166575621994da7e5df1fc54c24b24c51bec267de6_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Zebbra Sleeve Top</p>
-										<small>Price: ₱199<small>
-										<br><label onclick="removeFun1()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1"></td>
-
-							<td>₱199</td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- third Item -->
-						<tr id="remove2">
-
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/1659416872318a5096c977481daeca6b96e8e9f799_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Black Dress</p>
-										<small>Price: ₱269<small>
-										<br><label onclick="removeFun2()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1"></td>
-
-							<td>₱269 </td>
-
-							<!-- <td><input type="checkbox" class="check"></td> -->
-						</tr>
-
-						<!-- foutrth Item -->
-						<tr id="remove3">
-
-							<td class="remove-check" width="50px">
-								<div class="checks">
-									<input type="checkbox" >
-								</div>
-							</td>
-
-							<td>
-
-								<div class="cart-image">
-									<img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/16671815890a271ecd70886a1bb01eaa7bfd3b5e4a_thumbnail_900x.webp">
-
-									<div class="info">
-										<p>Silky Dress</p>
-										<small>Price: ₱250<small>
-										<br><label onclick="removeFun3()">Remove</label>
-									</div>
-								</div>
-
-							</td>
-							<td><input type="number" value="1"></td>
-
-							<td>₱250</td>
-
-						</tr>
-
-
-					</table>
-
-
-					<!-- total -->
-					<div class="total-price">
+						<div class="proms">
+							<img src="promo.png">
+						</div>
 						
-						<table>
-							<tr>
-								<td><i class="fa-solid fa-truck-fast" style="padding-right: 5px;"></i>Shipping Fee</td>
-								<td id="ship">₱283</td>
-							</tr>
-							<tr>
-								<td><i class="fa-solid fa-ticket" style="padding-right: 5px;"></i>Voucher</td>
-								<td id="ship" style="color: #ff523b; font-weight: bold;">50% OFF</td>
-							</tr>
 
-							<tr>
-								<td>Order Total</td>
-								<td ><small style="text-decoration: line-through;padding-right: 5px; color: #ff523b;">₱1,234</small>₱617</td>
-							</tr>
+						<div class="gallery">
 
+							<div class="img">
+								<img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/1639014986dd44c038ee3842b0b05e1946016dddb2_thumbnail_900x.webp" class="smallImg">
+							</div>
 
-							<!-- check out -->
-							<tr>
-								<td colspan="2"><a href="checkout.html"><button>Check Out</button></a></td>
-							</tr>
+							<div class="img">
+								<img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/16390149884112c424b2e3e8264a0afaa2269c5fab_thumbnail_900x.webp" class="smallImg">
+							</div>
 
-						</table>
+							<div class="img">
+								<img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/1639014991f8020fe373b1ee3f372b60b5a466ee60_thumbnail_900x.webp" class="smallImg">
+							</div>
 
+							<div class="img">
+								<img src="https://img.ltwebstatic.com/images3_pi/2021/12/09/16390149942b5ee5bf8f6245437701b819874c5a24_thumbnail_900x.webp" class="smallImg">
+							</div>
 
+						</div>
 					</div>
 
 
+
+					<!-- priduct name and deatils -->
+					<div class="Product-deatils">
+						
+						<div class="Product-name">
+							<h3>ROMWE Sweetness Ditsy Floral Cami Top & Button Front Tee</h3>
+							<span class="sku">SKU: sw2204295213766212</span>
+							<span class="reviews">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star-half-stroke"></i>
+
+								<span>(1000+ Reviews)</span>
+							</span>
+							<span class="hot-deals">
+								Hot Deals
+							</span>
+							<span class="price">
+								<h2>₱421
+								<span class="price2">₱497</span>
+								<span class="off">-41%</span>
+								</h2>
+							</span>
+
+						</div>
+
+						<h6 class="head-size">Size</h6>
+
+						<div class="size">
+							<span>XS</span>
+							<span>S</span>
+							<span>M</span>
+							<span>L</span>
+							<span>XL</span>
+						</div>
+
+						<div class="add-btn">
+							<button id="button">ADD TO CART</button>
+							<span class="heart">
+								<i class="fa-regular fa-heart" id="hearted" onclick="wishOpen()"></i>
+							</span>
+						</div>
+
+					</div>
+
 				</div>
-
-
-
-
 			</div>
 
+			<!-- Rating and Reviews -->
+			<div class="Ratings">
+				<h1>Customer Reviews ( 1000+ )</h1>
+
+				<div class="average-cont">
+					
+					<div class="rev1">
+						<p>Average Rating</p>
+						<span class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star-half-stroke"></i>
+
+							<span style="color: #000;margin-left: 10px;">4.95</span>
+						</span>
+					</div>
+
+					<div class="rev2">
+						<p>Did the item fit well?</p>
+
+						<div class="prog-cont">
+							<label class="label">Small</label>
+							<div class="one"></div>
+							<label class="percent">20%</label>
 
 
-			<!-- footer -->
+						</div>
+						<div class="prog-cont">
+							<label class="label">True-Size</label>
+							<div class="one2"></div>
+							<label class="percent">96%</label>
+
+						</div>
+						<div class="prog-cont">
+							<label class="label">Large</label>
+							<div class="one3"></div>
+							<label class="percent">40%</label>
+
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+
+<!-- pruduct card -->
+<div class="card-cont-mother">
+
+	<h1>Customers Also Viewed</h1>
+
+			
+</div>
+
+<div class="related-search">
+	<h1>Related Searches</h1>
+
+	<!-- searches -->
+	<div class="searches">
+		<span>Trendy</span>
+		<span>BlousesMIXED</span> 
+		<span>COLORSCute</span> 
+		<span>Blouse</span>
+		<span>BohoFlorals</span>
+		<span>Print Blouses</span>
+		<span>Puff Sleeve Blouse</span>
+		<span>Boho Summer</span>
+		<span>Short Sleeve Blouses</span>
+		<span>Floral</span>
+		<span>Ditsy Print</span>
+		<span>Short Puff Sleeves</span>
+		<span>Boho Blouses & Tees</span>
+		<span>Puff Sleeve </span>
+		<span>Blouse</span>
+		<span>Top Blouses </span>
+		<span>Trendy Tops </span>
+		<span>Button</span>
+		<span>Floral Summer</span>
+		<span>Boho Blouses</span>
+		<span>OCCASION LOOKS</span>
+		<span>Top Floral Blouses</span>
+	</div>
+
+</div>
+
+
+<!-- footer -->
 	<footer class="footer">
 
 		<div class="foot-cont">
@@ -408,12 +405,12 @@
 		<div class="foot-cont">
 			<label>FOLLOW US</label>
 
-			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></span>
-			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">Instagram</a></span>
-			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></span>
-			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></span>
-			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></span>
-			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">Tiktok</a></span>
+			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">About Us</a></span>
+			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">ShopaholicPH Blog</a></span>
+			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">ShopaholicPH Careers</a></span>
+			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">ShopaholicPH Policies</a></span>
+			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">Privacy Policy</a></span>
+			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">ShopaholicPH Mall</a></span>
 		</div>
 
 		<div class="foot-cont">
@@ -437,68 +434,110 @@
 		</div>
 		
 	</footer>
+
+
 </div>
 
 
+	
 
-		
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- scriptto remove item -->
+
+<script src="js/bootstrap.bundle.js"></script>
+
 <script type="text/javascript">
 	
-let remove = document.getElementById('remove');
+	let menu = document.getElementById("navlink-mobile-open");
 
-function removeFun() {
-	remove.remove('remove');
-}
-
-let remove1 = document.getElementById('remove1');
-
-function removeFun1() {
-	remove1.remove('remove1');
-}
-
-let remove2 = document.getElementById('remove2');
-
-function removeFun2() {
-	remove2.remove('remove2');
-}
-
-let remove3 = document.getElementById('remove3');
-
-function removeFun3() {
-	remove3.remove('remove3');
-}  
+	function menuOpen(){
+		menu.classList.toggle("navlink-mobile-open");
+	}
 
 </script>
 
-<!-- total -->
+<script type="text/javascript">
+	
+var ProductImg = document.getElementById("ProductImg");
+var SmallImg = document.getElementsByClassName("smallImg");
 
-
-
-
-<script>
-
-// function quant() {	
-// 	let quant = Number(document.getElementById("quantity").value);
-// 	let price = document.getElementById("qprice").innerHTML;
-//     let sum = price * quant;
-//     document.getElementById("qprice").innerHTML = sum;
-
-// }
-// function down() {	
-// 	let quants = Number(document.getElementById("quantity").value);
-// 	let current = document.getElementById("qprice").innerHTML;
-// 	// quants = 283;
-//     let sum = quants * current;
-//     document.getElementById("qprice").innerHTML = sum;
-// }
+SmallImg[0].onmouseover = function()
+{
+	ProductImg.src = SmallImg[0].src;
+}
+SmallImg[1].onmouseover = function()
+{
+	ProductImg.src = SmallImg[1].src;
+}
+SmallImg[2].onmouseover = function()
+{
+	ProductImg.src = SmallImg[2].src;
+}
+SmallImg[3].onmouseover = function()
+{
+	ProductImg.src = SmallImg[3].src;
+}
 
 </script>
+
+
+<!-- add to cart script -->
+<script type="text/javascript">
+	
+var noti = document.getElementById('cart');
+// var select = document.querySelector('select');
+var select = document.getElementById('button');
+
+{
+	select.addEventListener('click', (e)=>{
+		var add = Number(noti.getAttribute('cart-count')|| 0);
+		noti.setAttribute('cart-count', add + 1);
+		noti.classList.add('zero');
+	})
+
+}
+
+
+</script>
+
+<!-- add to heatrt script -->
+<script type="text/javascript">
+	
+var notif = document.getElementById('heart');
+// var select = document.querySelector('select');
+var heart = document.getElementById('hearted');
+
+{
+	heart.addEventListener('click', (e)=>{
+		var add = Number(notif.getAttribute('data-count')|| 0);
+		notif.setAttribute('data-count', add + 1);
+		notif.classList.add('zero1');
+	})
+
+}
+
+
+</script>
+
+<!-- script to toggle heart background -->
+
+<script type="text/javascript">
+	
+let wish = document.getElementById('hearted');
+
+function wishOpen() {
+	wish.classList.toggle('wish-open');
+}
+
+
+
+</script>
+
+
+
 
 <!-- toggele the home slide -->
 <script type="text/javascript">
