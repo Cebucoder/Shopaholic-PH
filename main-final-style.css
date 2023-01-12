@@ -392,19 +392,22 @@ option{
 	
 }
 .mobilenav a{
-	text-decoration: none;
 	color: #000;
-
+/*	background: pink;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .mobilenav a:hover{
 	color: #000;
 }
+
 .mobilenav ion-icon{
 	font-size: 28px;
 	padding: 10px;
 	border-radius: 10px;
 /*	transition: 0.5s;*/
-	opacity: .7;
+	opacity: .6;
 }
 .mobilenav ion-icon:hover{
 	background: #f7f7f7;
