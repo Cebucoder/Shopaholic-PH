@@ -4,13 +4,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main-final-style.css">
+	<link rel="stylesheet" type="text/css" href="main-final-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="account-main-style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
 	<title>Shoaholic-PH</title>
 
-
+	<style type="">
+		/*.home-cont{
+			margin-top: -50px;
+		}
+		.dashboard-cont{
+			margin-top: -50px;
+		}*/
+	</style>
 
 
 </head>
@@ -115,11 +123,11 @@
 	<div class="mobile-nav-cont">
 		<div class="mobilenav">
 			
-			<ion-icon name="home-outline"onclick="openHome()"></ion-icon>
+			<ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon>
 			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
 			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
 			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
-			<ion-icon name="grid-outline"onclick="openDashboard()"></ion-icon>
+			<ion-icon name="grid-outline" onclick="openDashboard()"></ion-icon>
 
 		</div>
 
@@ -127,7 +135,7 @@
 		<div class="home-cont" id="open-home">
 			<div class="home">
 				
-			<ul>
+			<ul id="ul-link">
 				<li>
 					<a href="main-final.html">Home</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
@@ -162,19 +170,30 @@
 					<a href="">Hot offers</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
+
 			</ul>
 
 			</div>
 		</div>
 
 
+		<!-- Open Dashboard -->
+			<div class="dashboard-cont" id="openDashboard">
+				<div class="dash-link" >
+					<ul>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="my-account.html">My Account</a>
+						</li>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="user-login.html">Logout</a>
+						</li>
+					</ul>
+			</div>
+			</div>
 
-
-		
 
 
 	</div>
-
 
 
 	<!--------------------------------------------------- Account Section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -687,7 +706,7 @@
 
 
 <!-- toggele the home slide -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	
 let openSlide = document.getElementById("open-home");
 let openDash = document.getElementById("openDashboard");
@@ -701,7 +720,7 @@ function openDashboard() {
 	openSlide.classList.remove("toggle-home");
 }
 
-</script>
+</script> -->
 
 
 <!-- small slider script -->
@@ -1012,7 +1031,8 @@ function showUpdates() {
 </script>
 
 
-
+<!-- navmibile function -->
+<script type="text/javascript" src="./js/navmobile.js"></script>
 
 
 
