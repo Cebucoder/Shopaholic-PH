@@ -16,6 +16,7 @@ body{
 .topgif{
 	width: 100%;
 	height: auto;
+	background: #f7f7f7;
 }
 .topgif img{
 	width: 100%;
@@ -892,6 +893,9 @@ cursor: pointer;
 	.hero-slider{
 		margin-top: 120px;
 		padding: 0 10px;
+	}
+	.topgif{
+		display: none;
 	}
 }
 
