@@ -655,6 +655,105 @@ option{
 
 
 
+/*Popup Cart cntainer*/
+
+
+.cart-pop-cont{
+	width: 100%;
+	height: 100%;
+	background: #000000a1;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.1s;
+	padding: 15px;
+}
+
+.toggle-cart{
+	opacity: 1;
+	visibility: visible;
+}
+.cart-cont{
+	width: 500px;
+	height: auto;
+/*	padding: 30px;*/
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	padding: 0 20px;
+	padding-bottom: 20px;
+	font-family: 'Poppins',sans-serif;
+
+}
+.cart-header{
+	width: 100%;
+	height: 60px;
+/*	background: pink;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.left-cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: .8;
+	cursor: pointer;
+
+}
+.left-cont ion-icon{
+	font-size: 25px;
+}
+.left-cont h3{
+	font-size: 20px;
+	font-weight: bolder;
+	margin-bottom: 0px;
+	padding-left: 10px;
+}
+.cart-close{
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	opacity: .8;
+	cursor: pointer;
+}
+.cart-close ion-icon{
+	font-size: 30px;
+}
+.cart-close:hover{
+	opacity: 1;
+	background: #f7f7f7;
+}
+
+.cart-label{
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+	background: #FCDEC8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	box-shadow: 0 0 10px -1px lightgray;
+	font-weight: bolder;
+}
+.cart-label span{
+	opacity: .8;
+}
+/*Popup Cart cntainer*/
+
 
 
 
