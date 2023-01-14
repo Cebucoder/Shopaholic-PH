@@ -13,7 +13,14 @@ body{
 	align-items: center;
 /*	background: #f7f7f7;*/
 }
-
+.topgif{
+	width: 100%;
+	height: auto;
+}
+.topgif img{
+	width: 100%;
+	height: auto;
+}
 
 
 
