@@ -105,22 +105,22 @@
 	top: 0;
 	left: 0;
 	z-index: 3;
-	visibility: visible;
+	visibility: hidden;
 	display: flex;
 	align-items: center;
-	padding-top: 90px;
-	transform: scale(0.1);
-	margin-left: -30rem;
-	margin-top: 9rem;
-	transition: all 0.4s;
+/*	padding-top: 90px;*/
+/*	transform: scale(0.1);*/
+	/*margin-left: -30rem;
+	margin-top: 9rem;*/
+	transition: all 0.2s;
 	opacity: 0;
 }
 .open-modal{
 	visibility: visible;
-	margin-left: 0;
-	margin-top: 0;
-	transition: all 0.4s;
-	transform: scale(1.1);
+/*	margin-left: 0;
+	margin-top: 0;*/
+	transition: all 0.2s;
+/*	transform: scale(1.1);*/
 	opacity: 1;
 }
 
@@ -604,11 +604,12 @@ input::-webkit-inner-spin-button {
 	display: none;
 	z-index: 2;
 	overflow-y: scroll;
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/
 	transition: all 0.3s;
 	opacity: 0;
 	padding-bottom: 80px;
-	padding-top: 80px;
+/*	padding-top: 80px;*/
+	z-index: 3;
 
 }
 .toggle-reciept{
@@ -626,7 +627,7 @@ input::-webkit-inner-spin-button {
 	height: auto;
 	background: #fff;
 	margin: auto;
-	margin-top: -110px;
+	margin-top: -200px;
 	border-top: 15px solid transparent;
 	border-image: url(./add-logo/triangle.png) 225 stretch ;
 	box-shadow: 0 10px 10px -1px lightgrey;
