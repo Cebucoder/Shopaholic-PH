@@ -487,6 +487,9 @@ option{
 	padding-right: 10px;
 	color: #FF6600;
 	opacity: 1;
+/*	background: #FCDEC8;*/
+	background: #f7f7f7;
+	border-radius: 10px;
 }
 .home a{
 	text-decoration: none;
@@ -566,6 +569,8 @@ option{
 	padding-right: 10px;
 	color: #FF6600;
 	opacity: 1;
+	background: #f7f7f7;
+	border-radius: 10px;
 }
 .dash-link a{
 	text-decoration: none;

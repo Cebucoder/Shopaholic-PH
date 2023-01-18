@@ -6,7 +6,8 @@
 	box-sizing: border-box;
 }
 .container{
-	background: url(./image-banner/login-back.png);
+	background: url(./add-logo/login-back.png);
+/*	background: url("blob:https://www.watermarkremover.io/b0000f55-50d4-40c4-bdaf-6110a905aa64");*/
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
@@ -24,11 +25,16 @@
 .logo{
 	width: 100%;
 	text-align: center;
-	font-family: Muli,Arial,Helvetica,sans-serif!important;
-	font-weight: 800;
 	padding-top: 10px;
 	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Poppins',sans-serif;
+/*	font-weight: bolder;*/
+	font-weight: 900;
+/*	padding-top: 10px;*/
+	letter-spacing: 2px;
 	cursor: pointer;
+	color: #000;
 }
 .logo span{
 	color: #FF6600;
