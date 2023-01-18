@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main-final-style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
+	<title>Shopaholic-PH</title>
+
+
+	<style type="text/css">
+		.cards .card2{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0;
+			transition: 1s;
+
+		}
+		.cards:hover .card2{
+			visibility: visible;
+			animation: fadeIn 1s;
+			opacity: 1;
+			
+		}
+		.promo-tag{
+			z-index: 1;
+		}
+		@keyframes fadeIn {
+  		0% { opacity: 0; }
+ 		 100% { opacity: 1; }
+		}
+
+		.viewmore{
+			width: 100%;
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			font-family: 'Poppins',sans-serif;
+			padding: 20px 0;
+			opacity: .8;
+		}
+		.viewmore span{
+			padding: 6px 20px;
+			border: 1px solid #000;
+			color: #000;
+			background: none;
+			border-radius: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+		.viewmore ion-icon{
+			font-size: 30px;
+			padding-left: 5px;
+			margin-right: 10px;
+		}
+		.viewmore span:hover{
+			margin-right: 5px;
+		}
+	</style>
+
+
+</head>
+
+
+
+<body>
+
+	
+
+	<div class="main-cont">
+		
+		<div class="navigations">
+			<header class="topnav">
+
+		<div class="social-icons">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-youtube"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+		<div class="currency-lang">
+
+			<select name="currency" id="currency">
+			    <option value="Peso ₱">Peso</option>
+			    <option value="USD">USD</option>
+			    <option value="euro">EURO</option>
+			    <option value="yen">YEN</option>
+			    
+  			</select>
+
+  			<select name="lang" id="lang">
+			    <option value="en">English</option>
+			    <option value="ph">Pilipino</option>
+			    <option value="ph">Chinese</option>
+			    <option value="ph">Pilipino</option>
+  			</select>
+
+		</div>
+
+	</header>
+
+	<div class="logo-icon">
+		<div class="logo">
+			<a href="main-final.html"><h1>Shopaholic<span>PH</span></h1></a>
+
+			<div class="prud-search">
+				<input type="text" name="" placeholder="Search product here..">
+				<div class="search-icon"><ion-icon name="search-outline"></ion-icon></div>
+			</div>
+
+			<div class="icons">
+				
+				
+				<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+				<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
+				<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+				<a href="#"><ion-icon name="person-outline"></ion-icon></a>
+				
+			</div>
+		</div>
+
+		<div class="navlinks">
+			<ul>
+				<li>
+					<span class="pop">NEW</span>
+					<a href="new.html">New Arrivals</a>
+				</li>
+				<!-- <li>
+					<a href="category.html">Categories</a>
+				</li> -->
+				<li >
+					<a href="men.html">Men's</a>
+				</li>
+				<li>
+					<a href="women.html">Women's</a>
+				</li>
+				<li>
+					<a href="jewelry.html">Jewelries</a>
+				</li>
+				<li>
+					<a href="perfume.html" >Perfumes</a>
+				</li>
+				<li>
+					<a href="furniture.html">Furnitures</a>
+				</li>
+				<li>
+					<a href="hot-offers.html" style="color: #FF6600; font-weight: bolder;">Hot offers</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		</div>
+
+	
+
+
+
+	<div class="mobile-nav-cont">
+		<div class="mobilenav">
+			
+			<ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon>
+			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
+			<ion-icon name="grid-outline"></ion-icon>
+
+		</div>
+
+		<!-- home popup -->
+		<div class="home-cont" id="open-home">
+			<div class="home">
+				
+			<ul>
+				<li>
+					<a href="main-final.html">Home</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+
+				<!-- <li>
+					<a href="category.html" onclick="openCategory()">Categories</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li> -->
+
+				<li>
+					<a href="men.html">Men's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="women.html">Women's</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="jewelry.html">Jewelries</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="perfume">Perfumes</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="funiture.html">Furnitures</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+				<li>
+					<a href="">Hot offers</a>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</li>
+			</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- image slider intro -->
+
+	<div class="hero-slider">
+		
+		<div class="carousel slide" data-bs-ride="carousel" id="controllMeCarousel">
+
+		<!-- carousel indecator -->
+
+		<div class="carousel-indicators">
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="0" class="active"></button>
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="1"></button>
+			<button data-bs-target="#controllMeCarousel" data-bs-slide-to="2"></button>
+		</div>
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp"class="d-block w-100">
+
+
+			</div>
+
+			<div class="carousel-item">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/11/14/16684152035aeb2a9f0a19e29f5e874da59798f704_thumbnail_1920x.webp" class="d-block w-100">
+			</div>
+
+			<div class="carousel-item">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp" class="d-block w-100">
+			</div>
+
+		</div>
+
+<!-- carousel button  control -->
+
+	<button class="carousel-control-prev" data-bs-target="#controllMeCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</button>
+
+	<button class="carousel-control-next" data-bs-target="#controllMeCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</button>
+
+	</div>
+<!-- carousel button cpntrol end -->
+
+	</div>
+
+	<!-- image slider intro -->
+
+
+
+
+
+
+
+<!-- slide ranod pic -->
+<!-- <div class="second-cont">
+	
+
+
+</div> -->
+<!-- slide radom pic end -->
+
+
+<!-- cards container main-->
+<div class="cards-conts">
+	<h1 class="text-center m-auto" style="display: flex;flex-direction: row;align-items: center;">Hot Offers
+		<img src="https://cdn-icons-png.flaticon.com/512/740/740842.png" style="width: 20px;margin-left: 10px;">
+	</h1>
+
+
+
+	<!-- cards continair items for shirt -->
+	<div class="cards-items-cont">
+		
+		<!-- card1 -->
+				<div class="cards" id="newin">
+						<a href="product-hot-view1.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/03/26/1616750748d239784358db8a50b01133c328388aac_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view1.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/03/26/1616750753c529c69fda7f9e1570d1c620965a01e2_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card1 -->
+
+				<!-- card2 -->
+				<div class="cards">
+						<a href="product-hot-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/02/18/1645162807b6870eda31753e974c452a3a93389531_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view2.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/02/18/1645162810da299eaeef51ff93f7eba2e55209acd4_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card2 -->
+
+				<!-- card3 -->
+				<div class="cards">
+						<a href="product-hot-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/04/26/1619417761fdbecab18347f9bf4fad0280e2066059_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view3.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/04/26/16194177644f042a2654c36ad033b5a1bf89634302_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card3 -->
+
+				<!-- card4 -->
+				<div class="cards">
+						<a href="product-hot-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/06/1670263245ccd064b66c1e2e1b3563358a7a31a681_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view4.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/06/16702632499f3bb36825293b313ed6c7b0386b515a_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card4 -->
+
+				<!-- card5 -->
+				<div class="cards">
+						<a href="product-hot-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/05/06/1651815625877521cf39463c600c83e3bcef2f386a_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view5.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/10/31/1667200110c562d88b59ee3e245219b11c29b144be_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card5 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/07/1670418529c1ae2f37ff3cb300882bf4537ae7e3c3_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view6.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/07/16704185347422fbb284333b9d9e1d1159b74960dc_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view7.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/08/02/16594348635c2d1439d4b693ab6f5b4c000c770162_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view7.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/08/16/1660661879db68e7d7b98a2e8765aa397c361b7aba_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view8.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/21/166901502537fcdc26fda6a3aef1929b75700a2087_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view8.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/21/16690150279b472543dc2d7d9664974fa6d0639d09_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view9.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/25/16693612935694a1ca09c141f3ee57f9616b236ef9_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view9.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/25/16693612952a57f213b230b87ab05340917f7c0149_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view10.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/12/16708224995312fd127d5231ff909a701f9b520d6f_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view10.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/12/12/1670822501e439f8efbdb499295d15940f921dd980_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view11.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/07/22/1626919287583b67d80261edd69e94109ab23fa9c1_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view11.html"><img src="https://img.ltwebstatic.com/images3_pi/2021/07/22/1626919290bb32a4cff788aad5e1570e5f982165ba_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+				<!-- card6 -->
+				<div class="cards">
+						<a href="product-hot-view12.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/14/1668393669dff08cf749e315de0b57c0ee21e7593d_thumbnail_900x.webp" class="card1"></a>
+
+						<a href="product-hot-view12.html"><img src="https://img.ltwebstatic.com/images3_pi/2022/11/14/1668393671d5d83e13e482eddcb3a1f849aa74cb2d_thumbnail_900x.webp" class="card2"></a>
+
+						<!-- <div class="promo-tag">
+							<img src="promo.png">
+						</div> -->
+				</div>
+				<!-- card6 -->
+
+	</div>
+	<!-- cards container items -->
+
+	<div class="viewmore">
+		<span>View More</span>
+		<ion-icon name="arrow-forward-outline"></ion-icon>
+	</div>
+	
+	<hr>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+	<footer class="footer">
+
+		<div class="foot-cont">
+			<label>Customer Service</label>
+
+			<a href="">Help Centre</a>
+			<a href="">ShopaholicPH Cares PH</a>
+			<a href="">Payment Methods</a>
+			<a href="">ShopaholicPay</a>
+			<a href="">ShopaholicPH Coins</a>
+			<a href="">Order Tracking</a>
+			<a href="">Free Shipping</a>
+			<a href="">Return & Refund</a>
+			<a href="">ShopaholicPH Guarantee</a>
+			<a href="">Overseas Product</a>
+			<a href="">Contact Us</a>
+
+		</div>
+
+		<div class="foot-cont">
+			<label>ABOUT SHOPAHOLIC PH</label>
+
+			<a href="">About Us</a>
+			<a href="">ShopaholicPH Blog</a>
+			<a href="">ShopaholicPH Careers</a>
+			<a href="">ShopaholicPH Policies</a>
+			<a href="">Privacy Policy</a>
+			<a href="">ShopaholicPH Mall</a>
+			<a href="">Seller Centre</a>
+			<a href="">Flash Deals</a>
+			<a href="">Media Contact</a>
+			
+		</div>
+
+		<div class="foot-cont">
+			
+			<label>PAYMENT</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/f4fc50d716f0377a3bdc6ad1906f3be4"></span>
+				<span><img src="https://cf.shopee.ph/file/648aa3f65236a21cfb97a35e1644e399"></span>
+				<span><img src="https://cf.shopee.ph/file/8efc3b564e08e9e864ea83ab43d9f913"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/91720ed84858d490ca62142de0494559"></span>
+				<span><img src="https://cf.shopee.ph/file/4a1f1c2d9ee1820ccc9621b44f277387"></span>
+				<span><img src="https://www.psaserbilis.com.ph/Content/img/gcash-logo.png" width="100%" style="padding:10px"></span>
+			</div>
+
+			<label>LOGISTICS</label>
+
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/631b5315df5e2e7a6360553c48c7b394"></span>
+				<span><img src="https://cf.shopee.ph/file/f08425e0b60ba5040a7d490d6cf4a7c4"></span>
+				<span><img src="https://cf.shopee.ph/file/b68e872bf1bc8a1aae1d118e448dd028"></span>
+			</div>
+			<div class="pay-logo">
+				<span><img src="https://cf.shopee.ph/file/22c0d58cae53fe505861989cf53364b2"></span>
+				<span><img src="https://cf.shopee.ph/file/fd1ae4ba79eb1a94f378efedb80da184"></span>
+				<span><img src="https://talentview.asia/wp-content/uploads/LBC-Logo.png"style="padding:20px; width: 100%;"></span>
+			</div>
+			
+		</div>
+
+		<div class="foot-cont">
+			<label>FOLLOW US</label>
+
+			<span class="brand"><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></span>
+			<span class="brand"><i class="fa-brands fa-square-instagram"></i><a href="">Instagram</a></span>
+			<span class="brand"><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></span>
+			<span class="brand"><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></span>
+			<span class="brand"><i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></span>
+			<span class="brand"><i class="fa-brands fa-tiktok"></i><a href="">Tiktok</a></span>
+		</div>
+
+		<div class="foot-cont">
+			<label>SHOPAHOLIC PH APP DOWNLOAD</label>
+
+			<div class="download">
+
+				<span>
+					<img src="https://cf.shopee.ph/file/fc6cf82d5a0bc4f7fa18b6386893d2da">
+				</span>
+
+				<div class="apps">
+					<span><img src="https://www.freepnglogos.com/uploads/app-store-logo-png/apple-app-store-travel-awards-globestamp-7.png"></span>
+					
+				</div>
+
+			</div>
+
+
+			
+		</div>
+		
+	</footer>
+
+
+	
+
+</body>
+
+<!-- ion iconic -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="js/bootstrap.bundle.js"></script>
+
+
+<!-- script fo the option -->
+
+<script type="text/javascript">
+	
+
+
+</script>
+
+
+<!-- toggele the home slide -->
+<script type="text/javascript">
+	
+let openSlide = document.getElementById("open-home");
+
+function openHome() {
+	openSlide.classList.toggle("toggle-home");
+}
+
+</script>
+
+
+
+
+</html>

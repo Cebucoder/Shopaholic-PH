@@ -209,10 +209,51 @@
 
 					<!-- cartlist -->
 					<div class="cart-label" id="cartlabel">
-						<span>Your cart is empty</span>
+						<span>You have ( 2 ) items in your cart</span>
 					</div>
 
-					<div class="cart-item"></div>
+					<div class="cartmother">
+					<!-- cart item -->
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+
+							<small class="pname">Puff Sleeve Floral Top</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">286</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/16657562146a2f56751c745d329f13af05ae57027b_thumbnail_900x.webp">
+
+							<small class="pname">Zebra Striped Asymmetrical Hem Tank Topp</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">218</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+				</div>
+
+					<!-- vart Total -->
+					<div class="ctotal">
+						<span>Total: </span>
+						<span class="c-total">504</span>
+					</div>
+
+					<!-- cart view and checkout -->
+					<div class="cart-btn">
+						<a href="cart.html"><button>ViewCart</button></a>
+						<a href="checkout.html"><button>Checkout</button></a>
+					</div>
 
 				</div>
 			</div>
@@ -479,47 +520,8 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-<!-- script for Popup cart -->
-
-<script type="text/javascript">
-	
-let cartPop = document.getElementById("cart-pop-cont");
-let closeCart = document.getElementById("cart-pop-cont");
-
-function cartPopup() {
-	cartPop.classList.add("toggle-cart");
-	openSlide.classList.remove("toggle-home");
-	dashboard.classList.remove("toggle-dashboard");
-}
-function closeCartpopup(){
-	closeCart.classList.remove("toggle-cart");
-}
-
-</script>
-
-
-<!-- toggele the home slide -->
-<script type="text/javascript">
-	
-let openSlide = document.getElementById("open-home");
-let dashboard = document.getElementById("openDashboard");
-
-
-function openHome() {
-	openSlide.classList.toggle("toggle-home");
-	dashboard.classList.remove("toggle-dashboard");
-	cartPop.classList.remove("toggle-cart");
-
-}
-
-function openDashboard() {
-	dashboard.classList.toggle("toggle-dashboard");
-	openSlide.classList.remove("toggle-home");
-	cartPop.classList.remove("toggle-cart");
-}
-
-
-</script>
+<!-- web.js all javasscript compilation -->
+<script src="./js/web.js"></script>
 
 
 <script type="text/javascript" src="./js/account.js"></script>

@@ -14,7 +14,13 @@
 </head>
 <body>
 
-<div class="navigations">
+	<div class="navigations">
+
+			<!-- banner Gif -->
+		<!-- <div class="topgif">
+			<img src="https://img.ltwebstatic.com/images3_ach/2023/01/10/1673339059b1010a16b034ef9e199484e6ea9d8274.gif">
+		</div> -->
+			
 			<header class="topnav">
 
 		<div class="social-icons">
@@ -26,7 +32,7 @@
 		<div class="currency-lang">
 
 			<select name="currency" id="currency">
-			    <option value="Peso ₱">Peso</option>
+			    <option value="Peso ₱">PHP</option>
 			    <option value="USD">USD</option>
 			    <option value="euro">EURO</option>
 			    <option value="yen">YEN</option>
@@ -55,9 +61,10 @@
 
 			<div class="icons">
 				
-				<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+				
+				<a href="#cart"><ion-icon name="heart-outline" onclick="cartPopup()"></ion-icon></a>
 				<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
-				<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
+				<a href="#cart"><ion-icon name="cart-outline" onclick="cartPopup()"></ion-icon></a>
 				<a class="acc" href="#" onclick="openAccount()"><ion-icon name="person-outline">
 						<div class="account" id="Account">
 						<a href="user-login.html">Logout</a>
@@ -75,25 +82,26 @@
 					<span class="pop">NEW</span>
 					<a href="new.html">New Arrivals</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="category.html">Categories</a>
-				</li>
+				</li> -->
 				<li >
 					<a href="men.html">Men's</a>
 				</li>
 				<li>
-					<a href="women.html" >Women's</a>
+					<a href="women.html">Women's</a>
 				</li>
 				<li>
-					<a href="jewelry.html" style="color: #FF6600; font-weight: bolder;">Jewelries</a>
+					<a href="jewelry.html">Jewelries</a>
 				</li>
 				<li>
 					<a href="perfume.html">Perfumes</a>
 				</li>
 				<li>
-					<a href="funiture.html">Furnitures</a>
+					<a href="furniture.html">Furnitures</a>
 				</li>
 				<li>
+					<span class="pop">TRENDING NOW</span>
 					<a href="hot-offers.html">Hot offers</a>
 				</li>
 			</ul>
@@ -108,11 +116,11 @@
 	<div class="mobile-nav-cont">
 		<div class="mobilenav">
 			
-			<ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon>
-			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
-			<a href="cart.html"><ion-icon name="heart-outline"></ion-icon></a>
+			<a href="#"><ion-icon name="home-outline" id="home" onclick="openHome()"></ion-icon></a>
+			<a href="#cart"><ion-icon name="cart-outline" onclick="cartPopup()"></ion-icon></a>
+			<a href="#cart"><ion-icon name="heart-outline" onclick="cartPopup()"></ion-icon></a>
 			<a href="contact-support.html"><ion-icon name="headset-outline"></ion-icon></a>
-			<ion-icon name="grid-outline"></ion-icon>
+			<a href="#"><ion-icon name="grid-outline" onclick="openDashboard()"></ion-icon></a>
 
 		</div>
 
@@ -120,16 +128,16 @@
 		<div class="home-cont" id="open-home">
 			<div class="home">
 				
-			<ul>
+			<ul id="ul-link">
 				<li>
 					<a href="main-final.html">Home</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 
-				<li>
+				<!-- <li>
 					<a href="category.html" onclick="openCategory()">Categories</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
-				</li>
+				</li> -->
 
 				<li>
 					<a href="men.html">Men's</a>
@@ -140,27 +148,113 @@
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="jewelry.html" style="color: #FF6600; font-weight: bolder;">Jewelries</a>
+					<a href="jewelry.html">Jewelries</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="perfume">Perfumes</a>
+					<a href="perfume.html">Perfumes</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="funiture.html">Furnitures</a>
+					<a href="furniture.html">Furnitures</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
 					<a href="">Hot offers</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
+
 			</ul>
 
 			</div>
 		</div>
 
+
+		<!-- Open Dashboard -->
+			<div class="dashboard-cont" id="openDashboard">
+				<div class="dash-link" >
+					<ul>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="my-account.html">My Account</a>
+						</li>
+						<li>
+							<ion-icon name="gear-outline"></ion-icon><a href="user-login.html">Logout</a>
+						</li>
+					</ul>
+			</div>
+			</div>
+
+
+			
 	</div>
+
+
+	<!-- chart Container -->
+			<div class="cart-pop-cont" id="cart-pop-cont">
+				<!-- Cart container -->
+				<div class="cart-cont">
+					<div class="cart-header">
+						<div class="left-cont">
+							<ion-icon name="cart-outline"></ion-icon>
+							<h3>Manage Cart</h3>
+						</div>
+
+						<div class="cart-close" onclick="closeCartpopup()">
+							<ion-icon name="close-outline"></ion-icon>
+						</div>
+					</div>
+
+					<!-- cartlist -->
+					<div class="cart-label" id="cartlabel">
+						<span>You have ( 2 ) items in your cart</span>
+					</div>
+
+					<div class="cartmother">
+					<!-- cart item -->
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+
+							<small class="pname">Puff Sleeve Floral Top</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">286</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/16657562146a2f56751c745d329f13af05ae57027b_thumbnail_900x.webp">
+
+							<small class="pname">Zebra Striped Asymmetrical Hem Tank Topp</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">218</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+				</div>
+
+					<!-- vart Total -->
+					<div class="ctotal">
+						<span>Total: </span>
+						<span class="c-total">504</span>
+					</div>
+
+					<!-- cart view and checkout -->
+					<div class="cart-btn">
+						<a href="cart.html"><button>ViewCart</button></a>
+						<a href="checkout.html"><button>Checkout</button></a>
+					</div>
+
+				</div>
+			</div>
+	<!-- chart Container -->
 	
 <div class="main-cont">
 

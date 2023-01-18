@@ -951,6 +951,40 @@ option{
 cursor: pointer;
 
 }
+
+
+/*related searches*/
+.related-search{
+	width: 100%;
+	height: auto;
+	padding: 30px;
+}
+.related-search h1{
+	color: #000;
+	font-weight: 900;
+	font-size: 25px;
+	padding-bottom: 20px;
+	font-family: Muli,Arial,Helvetica,sans-serif !important;
+}
+.searches{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.searches span{
+	padding: 5px 10px;
+	border: 1px solid lightgrey;
+	border-radius: 50px;
+	font-size: 13px;
+	margin: 10px 10px 0 5px;
+	color: grey;
+	cursor: pointer;
+}
+.searches span:hover{
+	border: 1px solid black;
+}
 /*-------------------------footer end-------------------------*/
 
 

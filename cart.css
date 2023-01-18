@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.cart-cont{
+.carts-conts{
 	width: 100%;
 	height: auto;
 	background: #fff;
 	padding: 50px;
-	margin-top: 130px;
+	margin-top: 160px;
 /*	margin-bottom: 50px;*/
 }
 .cart-Item{

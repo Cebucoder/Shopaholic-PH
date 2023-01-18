@@ -4,23 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main-final-style.css">
-	<link rel="stylesheet" type="text/css" href="main-final-style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="account-main-style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="mainstyle.css"> -->
 	<title>Shoaholic-PH</title>
 
-	<style type="">
-		/*.home-cont{
-			margin-top: -50px;
-		}
-		.dashboard-cont{
-			margin-top: -50px;
-		}*/
-	</style>
-
-
+	
 </head>
 <body>
 
@@ -28,12 +18,12 @@
 
 	<div class="main-cont">
 		
-		<div class="navigations">
+			<div class="navigations">
 
 			<!-- banner Gif -->
-		<!-- <div class="topgif">
+		<div class="topgif">
 			<img src="https://img.ltwebstatic.com/images3_ach/2023/01/10/1673339059b1010a16b034ef9e199484e6ea9d8274.gif">
-		</div> -->
+		</div>
 			
 			<header class="topnav">
 
@@ -220,15 +210,55 @@
 
 					<!-- cartlist -->
 					<div class="cart-label" id="cartlabel">
-						<span>Your cart is empty</span>
+						<span>You have ( 2 ) items in your cart</span>
 					</div>
 
-					<div class="cart-item"></div>
+					<div class="cartmother">
+					<!-- cart item -->
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2021/03/23/16164677623815d6f09448b96461428ecd2814cb57_thumbnail_900x.webp">
+
+							<small class="pname">Puff Sleeve Floral Top</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">286</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+
+					<div class="carts-items">
+						<div class="cart-images">
+							<img src="https://img.ltwebstatic.com/images3_pi/2022/10/14/16657562146a2f56751c745d329f13af05ae57027b_thumbnail_900x.webp">
+
+							<small class="pname">Zebra Striped Asymmetrical Hem Tank Topp</small>
+						</div>
+
+						<input type="number" name="quant" value="1">
+
+						<small class="pprice">218</small>
+
+						<ion-icon name="trash-outline"></ion-icon>
+					</div>
+				</div>
+
+					<!-- vart Total -->
+					<div class="ctotal">
+						<span>Total: </span>
+						<span class="c-total">504</span>
+					</div>
+
+					<!-- cart view and checkout -->
+					<div class="cart-btn">
+						<a href="cart.html"><button>ViewCart</button></a>
+						<a href="checkout.html"><button>Checkout</button></a>
+					</div>
 
 				</div>
 			</div>
 	<!-- chart Container -->
-
 
 
 
@@ -735,50 +765,8 @@
 
 <!-- script fo the option -->
 
-<script type="text/javascript">
-	
-
-
-</script>
-
-
-<!-- toggele the home slide -->
-<!-- <script type="text/javascript">
-	
-let openSlide = document.getElementById("open-home");
-let openDash = document.getElementById("openDashboard");
-
-function openHome() {
-	openSlide.classList.toggle("toggle-home");
-	openHome.classList.remove("toggle-dashboard");
-}
-function openDashboard() {
-	openDashboard.classList.toggle("toggle-dashboard");
-	openSlide.classList.remove("toggle-home");
-}
-
-</script> -->
-
-
-<!-- small slider script -->
-
-<!-- <script type="text/javascript">
-let items = document.querySelectorAll('.carousel .carousel-item')
-
-		items.forEach((el) => {
-			const minPerSlide = 4
-			let next = el.nextElementSibling
-			for (var i=1; i<minPerSlide; i++) {
-				if (!next) {
-            // wrap carousel by using first child
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
-</script> -->
+<!-- web.js all javasscript compilation -->
+<script src="./js/web.js"></script>
 
 <script type="text/javascript">
 	

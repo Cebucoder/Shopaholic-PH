@@ -186,7 +186,7 @@
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
-					<a href="funiture.html">Furnitures</a>
+					<a href="furniture.html">Furnitures</a>
 					<ion-icon name="chevron-forward-outline"></ion-icon>
 				</li>
 				<li>
@@ -315,7 +315,7 @@
 			</div>
 
 			<div class="carousel-item">
-				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/12/1670847312d0d736f11708da0f7a1a0476aa93979f_thumbnail_1920x.webp" class="d-block w-100">
+				<img src="https://img.ltwebstatic.com/images3_ach/2022/12/19/16714176229cba287d2c6e4bb47b2f92bff2b150aa_thumbnail_1920x.webp" class="d-block w-100">
 			</div>
 
 		</div>
@@ -354,7 +354,7 @@
 
 <!-- cards container main-->
 <div class="cards-conts">
-	<h1>Top Searches</h1>
+	<h1 class="text-center">Top Searches</h1>
 
 
 	<!-- cards continair items -->
@@ -602,6 +602,37 @@
 
 </div>
 
+<div class="related-search">
+	<h1>Related Searches</h1>
+
+	<!-- searches -->
+	<div class="searches">
+		<span>Trendy</span>
+		<span>BlousesMIXED</span> 
+		<span>COLORSCute</span> 
+		<span>Blouse</span>
+		<span>BohoFlorals</span>
+		<span>Print Blouses</span>
+		<span>Puff Sleeve Blouse</span>
+		<span>Boho Summer</span>
+		<span>Short Sleeve Blouses</span>
+		<span>Floral</span>
+		<span>Ditsy Print</span>
+		<span>Short Puff Sleeves</span>
+		<span>Boho Blouses & Tees</span>
+		<span>Puff Sleeve </span>
+		<span>Blouse</span>
+		<span>Top Blouses </span>
+		<span>Trendy Tops </span>
+		<span>Button</span>
+		<span>Floral Summer</span>
+		<span>Boho Blouses</span>
+		<span>OCCASION LOOKS</span>
+		<span>Top Floral Blouses</span>
+	</div>
+
+</div>
+
 
 
 
@@ -716,69 +747,8 @@
 
 <script src="js/bootstrap.bundle.js"></script>
 
-
-<!-- script for Popup cart -->
-
-<script type="text/javascript">
-	
-let cartPop = document.getElementById("cart-pop-cont");
-let closeCart = document.getElementById("cart-pop-cont");
-
-function cartPopup() {
-	cartPop.classList.add("toggle-cart");
-	openSlide.classList.remove("toggle-home");
-	dashboard.classList.remove("toggle-dashboard");
-}
-function closeCartpopup(){
-	closeCart.classList.remove("toggle-cart");
-}
-
-</script>
-
-
-<!-- toggele the home slide -->
-<script type="text/javascript">
-	
-let openSlide = document.getElementById("open-home");
-let dashboard = document.getElementById("openDashboard");
-
-
-function openHome() {
-	openSlide.classList.toggle("toggle-home");
-	dashboard.classList.remove("toggle-dashboard");
-	cartPop.classList.remove("toggle-cart");
-
-}
-
-function openDashboard() {
-	dashboard.classList.toggle("toggle-dashboard");
-	openSlide.classList.remove("toggle-home");
-	cartPop.classList.remove("toggle-cart");
-}
-
-
-</script>
-
-
-<!-- small slider script -->
-
-<!-- <script type="text/javascript">
-let items = document.querySelectorAll('.carousel .carousel-item')
-
-		items.forEach((el) => {
-			const minPerSlide = 4
-			let next = el.nextElementSibling
-			for (var i=1; i<minPerSlide; i++) {
-				if (!next) {
-            // wrap carousel by using first child
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
-</script> -->
+<!-- web.js all javasscript compilation -->
+<script src="./js/web.js"></script>
 
 
 <!-- opeing account -->
