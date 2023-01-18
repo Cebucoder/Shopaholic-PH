@@ -1,15 +1,17 @@
 // script for Popup cart
 
 
-	
+
 let cartPop = document.getElementById("cart-pop-cont");
 let closeCart = document.getElementById("cart-pop-cont");
+
 
 function cartPopup() {
 	cartPop.classList.add("toggle-cart");
 	openSlide.classList.remove("toggle-home");
 	dashboard.classList.remove("toggle-dashboard");
 }
+
 function closeCartpopup(){
 	closeCart.classList.remove("toggle-cart");
 }
@@ -124,5 +126,13 @@ let wish = document.getElementById('hearted');
 function wishOpen() {
 	wish.classList.toggle('wish-open');
 }
+
+
+
+
+
+
+
+
 
 

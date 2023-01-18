@@ -1,0 +1,4 @@
+.hide-navigations{
+	top: -100%;
+	transition: .3s;
+}
