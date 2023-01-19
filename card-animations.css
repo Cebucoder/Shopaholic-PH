@@ -1,0 +1,54 @@
+.cards .card2{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0;
+			transition: 1s;
+
+		}
+		.cards:hover .card2{
+			visibility: visible;
+			animation: fadeIn 1s;
+			opacity: 1;
+			
+		}
+		.promo-tag{
+			z-index: 1;
+		}
+		@keyframes fadeIn {
+  		0% { opacity: 0; }
+ 		 100% { opacity: 1; }
+		}
+
+		.viewmore{
+			width: 100%;
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			font-family: 'Poppins',sans-serif;
+			padding: 20px 0;
+			opacity: .8;
+		}
+		.viewmore span{
+			padding: 6px 20px;
+			border: 1px solid #000;
+			color: #000;
+			background: none;
+			border-radius: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+		.viewmore ion-icon{
+			font-size: 30px;
+			padding-left: 5px;
+			margin-right: 10px;
+		}
+		.viewmore span:hover{
+			margin-right: 5px;
+		}
