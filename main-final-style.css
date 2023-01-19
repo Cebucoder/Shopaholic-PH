@@ -127,6 +127,10 @@ body{
 	transition: 0.3s;
 	padding: 5px;
 }
+.social-icons a{
+	opacity: 0.8;
+	color: #000;
+}
 .social-icons i:hover{
 	opacity: 1;
 	transform: translateY(-5px);

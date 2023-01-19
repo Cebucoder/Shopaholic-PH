@@ -21,7 +21,7 @@ body{
 	padding-right: 20px;
 	padding-top: 20px;
 /*	border-bottom: 2px solid red;*/
-	margin-top: 170px;
+	margin-top: 200px;
 }
 .img-cont{
 	width: 100%;
@@ -45,7 +45,7 @@ body{
 	height: 440px;
 	box-sizing: border-box;
 	cursor: pointer;
-/*	background: red;*/
+	background: lightgrey;
 }
 /*add to cart*/
 
@@ -281,10 +281,11 @@ body{
 .Ratings h1{
 	color: #000;
 	font-weight: 900;
-	font-size: 25px;
+	font-size: 23px;
 	padding-bottom: 20px;
 	cursor: pointer;
-	font-family: Muli,Arial,Helvetica,sans-serif !important;
+/*	font-family: Muli,Arial,Helvetica,sans-serif !important;*/
+	font-family: 'Poppins',sans-serif;
 }
 .average-cont{
 	width: 100%;
@@ -404,9 +405,10 @@ body{
 .related-search h1{
 	color: #000;
 	font-weight: 900;
-	font-size: 25px;
+	font-size: 23px;
 	padding-bottom: 20px;
-	font-family: Muli,Arial,Helvetica,sans-serif !important;
+/*	font-family: Muli,Arial,Helvetica,sans-serif !important;*/
+	font-family: 'Poppins',sans-serif !important;
 }
 .searches{
 	width: 100%;
