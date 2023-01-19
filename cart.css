@@ -4,8 +4,8 @@
 	width: 100%;
 	height: auto;
 	background: #fff;
-	padding: 50px;
-	margin-top: 160px;
+	padding: 10px;
+	margin-top: 210px;
 /*	margin-bottom: 50px;*/
 }
 .cart-Item{
@@ -50,7 +50,7 @@ th{
 	padding: 10px;
 	padding-right: 15px;
 	color: #fff;
-	background: #ff523b;
+	background: #FF6600;
 	cursor: pointer;
 
 }
@@ -111,12 +111,17 @@ button{
 	padding: 10px;
 
 }
-
+@media only screen and (max-width:800px){
+.carts-conts{
+	
+	margin-top: 110px;
+}
+}
 
 @media only screen and (max-width:600px){
-.cart-cont{
+.carts-conts{
 	
-	padding: 20px;
+	padding: 10px;
 	padding-top: 10px;
 }
 }
