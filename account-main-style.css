@@ -489,7 +489,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;Wallet
+	justify-content: center;
 	margin: auto;
 }
 .Promo-hero{
@@ -1229,7 +1229,14 @@ body{
 
 
 
-
+@media only screen and (max-width:800px){
+	.account-cont{
+		margin-top: 104px;
+	}
+	.account-form{
+		margin-left: 0px;
+	}
+}
 @media only screen and (max-width:839px){
 	.account-cont{
 		flex-wrap: wrap;

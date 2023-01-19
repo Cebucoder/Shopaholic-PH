@@ -435,7 +435,15 @@ font-family: 'Poppins',sans-serif;
 
 
 /*responsive*/
+
+@media only screen and (max-width:800px){
+	.product-view{
+	margin-top: 131px;
+}
+}
 @media only screen and (max-width: 785px){
+
+
 
 .Ratings{
 	padding: 15px;
