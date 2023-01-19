@@ -15,6 +15,7 @@ body{
 }
 .topgif{
 	width: 100%;
+	max-width: 1500px;
 	height: auto;
 	background: #f7f7f7;
 }
@@ -96,6 +97,7 @@ body{
 	position: fixed;
 	top: 0;
 	z-index: 3;
+	max-width: 1500px;
 }
 .hide-navigation{
 	top: 100%;
@@ -623,6 +625,7 @@ option{
 	width: 100%;
 	height: auto;
 	padding: 25px;
+	max-width: 1500px;
 }
 .cards-conts h1{
 	padding-bottom: 20px;
@@ -967,6 +970,8 @@ cursor: pointer;
 	width: 100%;
 	height: auto;
 	padding: 30px;
+	margin: auto;
+    max-width: 1500px;
 }
 .related-search h1{
 	color: #000;

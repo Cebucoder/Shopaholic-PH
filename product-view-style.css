@@ -390,7 +390,8 @@ body{
 	font-size: 25px;
 	padding-bottom: 20px;
 	padding-left: 30px;
-	font-family: Muli,Arial,Helvetica,sans-serif !important;
+/*	font-family: Muli,Arial,Helvetica,sans-serif !important;*/
+font-family: 'Poppins',sans-serif;
 }
 .percent{
 	font-size: 13px;
@@ -401,6 +402,8 @@ body{
 	width: 100%;
 	height: auto;
 	padding: 30px;
+	margin: auto;
+    max-width: 1500px;
 }
 .related-search h1{
 	color: #000;
