@@ -1368,8 +1368,9 @@ body{
 		margin-bottom: 5px;
 	}
 	.account-cont{
+                margin-top: 140px;
 		height: auto;
-		padding: 0;
+		padding: 0 5px;
 	}
 	.account-form{
 		height: auto;

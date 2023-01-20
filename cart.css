@@ -139,5 +139,10 @@ button{
 
 .remove-check{
 	display: none;
+        
+}
+.carts-conts{
+	
+	margin-top:120px;
 }
 }
