@@ -4,7 +4,7 @@
 	width: 100%;
 	height: auto;
 	background: #fff;
-	padding: 10px;
+	padding: 20px;
 	margin-top: 210px;
 /*	margin-bottom: 50px;*/
 }
@@ -32,10 +32,10 @@
 
 table{
 	width: 100%;
-/*	border-collapse: collapse;*/
-	border: 2px solid #fff;
+	border-collapse: collapse;
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 20px;
+	border: none;
 }
 .cart-image{
 	display: flex;
@@ -52,6 +52,7 @@ th{
 	color: #fff;
 	background: #FF6600;
 	cursor: pointer;
+/*	background: black;*/
 
 }
 td{
@@ -66,6 +67,7 @@ td input{
 /*	border-radius: 10px;*/
 	border: 1px solid #000;
 	padding: 5px;
+	text-align: center;
 }
 td label{
 	color: #ff523b;
@@ -76,6 +78,7 @@ td label:hover{
 }
 tr{
 	transition:all 0.6s ease;
+
 }
 .info{
 	text-align: left;
@@ -105,10 +108,14 @@ th:last-child{
 }
 button{
 	width: 100%;
+	height: 40px;
 	border: none;
 	background: #000;
+	font-size: 16px;
 	color: #fff;
-	padding: 10px;
+	font-family: 'Poppins',sans-serif;
+	margin-top: 20px;
+	border: none;
 
 }
 @media only screen and (max-width:800px){
