@@ -1192,6 +1192,12 @@ cards{
 
 }
 
+@media only screen and (max-width:368px){
+	.cart-btn button{
+		width: 125px;
+	}
+}
+
 
 @media only screen and (max-width:320px){
 	.cards{
