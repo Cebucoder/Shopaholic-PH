@@ -209,7 +209,7 @@ body{
 	cursor: pointer;
 }
 .size span:hover{
-	border: 1px solid #ff523b;
+	border: 1px solid #000;
 }
 .add-btn{
 	width: 100%;
