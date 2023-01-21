@@ -4,16 +4,35 @@
 
 let cartPop = document.getElementById("cart-pop-cont");
 let closeCart = document.getElementById("cart-pop-cont");
+let closeWish = document.getElementById("wish-pop-cont");
+
 
 
 function cartPopup() {
 	cartPop.classList.add("toggle-cart");
 	openSlide.classList.remove("toggle-home");
 	dashboard.classList.remove("toggle-dashboard");
+	wishPop.classList.remove("toggle-wish");
+
+
 }
 
 function closeCartpopup(){
 	closeCart.classList.remove("toggle-cart");
+}
+
+
+let wishPop = document.getElementById("wish-pop-cont");
+
+function wishPopup() {
+	wishPop.classList.add("toggle-wish");
+	cartPop.classList.remove("toggle-cart");
+	openSlide.classList.remove("toggle-home");
+	dashboard.classList.remove("toggle-dashboard");
+	
+}
+function closeWishpopup(){
+	closeWish.classList.remove("toggle-wish");
 }
 
 
@@ -30,6 +49,8 @@ function openHome() {
 	openSlide.classList.toggle("toggle-home");
 	dashboard.classList.remove("toggle-dashboard");
 	cartPop.classList.remove("toggle-cart");
+	wishPop.classList.remove("toggle-wish");
+
 
 }
 
@@ -37,6 +58,8 @@ function openDashboard() {
 	dashboard.classList.toggle("toggle-dashboard");
 	openSlide.classList.remove("toggle-home");
 	cartPop.classList.remove("toggle-cart");
+	wishPop.classList.remove("toggle-wish");
+
 }
 
 
