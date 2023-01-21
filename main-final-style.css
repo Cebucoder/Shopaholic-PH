@@ -1189,6 +1189,9 @@ cards{
 		width: 43px;
 		height: 43px;
 	}
+	.cart-label{
+		font-size: 12px;
+	}
 
 }
 
